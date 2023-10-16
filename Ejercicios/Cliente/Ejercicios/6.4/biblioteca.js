@@ -13,4 +13,6 @@ libro2.insertaLibro();
 arrBiblioteca.push(libro1);
 
 console.log(arrBiblioteca);
-console.table(arrBiblioteca);
+// console.table(arrBiblioteca);
+
+
