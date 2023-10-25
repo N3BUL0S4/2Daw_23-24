@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Local</label>
+        <input type="text" name="local" id="local">
+        <fieldset>
+            <legend>1.Datos del Cliente</legend>
+            <label for="">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+            <label for="">Clave</label>
+            <input type="password" name="clave" id="clave">
+            <br>
+            <label for="">Direccion para envios: </label>
+            <input type="text" name="direcion" id="direcion">
+            <br>
+            <label for="">Direccion de correo electronico: </label>
+            <input type="text" name="correo" id="correo">
+            <label for="">Telefono</label>
+            <input type="number" name="telefono" id="telefono"> 
+        </fieldset>
+        <fieldset>
+            <legend>2.Datos del pedido</legend>
+            <label for="">Indique la cantidad</label>
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <label for="">Selecione el tamaño de la pizza: </label>
+            <input type="radio" name="pizza" id="Extra">
+            <label for="">Extra</label>
+            <input type="radio" name="pizza" id="Grande">
+            <label for="">Grande</label>
+            <input type="radio" name="pizza" id="Mediana">
+            <label for="">Mediana</label>
+            <input type="radio" name="pizza" id="Pequna">
+            <label for="">Pequeña</label>
+            <br>
+            <label for="">Selecion los ingredientes</label>
+            <Select name="Lista" id="lista" multiple>
+                <option value="Tomate">Tomate</option>
+                <option value="Queso">Queso</option>
+                <option value="Bacon">Bacon</option>
+            </Select>
+        </fieldset>
+        <fieldset>
+            <legend>3.Otros datos</legend>
+            <label for="">Elija las promociones que desea utilizar:</label>
+            <input type="checkbox" name="promo" id="en_tienda">
+            <label for="">Recogida en tienda -10%</label>
+            <input type="checkbox" name="promo" id="efectivo">
+            <label for="">Pagon en efectivo -5%</label>
+            <br>
+            <label for="">Observaciones/Sugerencias</label>
+            <textarea name="mierda" id="mierda" cols="57" rows="3"></textarea>
+        </fieldset>
+        <center>
+            <button>
+                Hacer pedido
+                <img src="../pizza.jpg" alt="pizza" width="40">
+            </button>
+            <button inputmode="reset">
+                Borrar Datos
+                <img src="../reset.jpg" alt="Reset" width="22">
+            </button>
+            <button>
+                Ver precios
+                <img src="../precio.png" alt="Precio" width="22">
+            </button>
+        </center>
+
+    </form>
+    
+</body>
+</html>

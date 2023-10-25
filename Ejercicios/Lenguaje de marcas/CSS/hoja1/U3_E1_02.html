@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      p {
+        font-family: Verdana;
+        color: red;
+      }
+      p a {
+        font-size: 50px;
+      }
+      p * a {
+        font-size: 50px;
+      }
+      p > a {
+        font-size: 50px;
+      }
+      h1 + h2 {
+        font-size: 50px;
+      }
+      [title~="educativo"] {
+        background-color: yellow;
+      }
+      p.grandote {
+        font-size: 50px;
+      }
+      .chico {
+        font-size: 1Opx;
+      }
+      #peque {
+        font-size: 8px;
+      }
+    </style>
+  </head>
+  <body>
+	<p>Parrafo normal</p>
+	<p><a href="#">Un enlace dento de un parrafo</a></p>
+	<p><span><a href="#">Esto es un enlace dento de un span dento de un parrafo</a></span></p>
+	<h1>Es es un h1</h1>
+	<h2>Es es un h2</h2>
+	<p title="educativo">es es un parrafo con titulo educativo</p>
+	<p class="gradote">esto es un parrafo de clase grandote</p>
+	<p class="chico">esto es cualquiercosa con clase chico</p>
+	<p id="peque">parrafo con id peque</p>
+
+  </body>
+</html>
