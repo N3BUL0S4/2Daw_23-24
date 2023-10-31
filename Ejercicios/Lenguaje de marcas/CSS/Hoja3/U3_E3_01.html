@@ -13,10 +13,20 @@
         table td {
             border-style: dotted;
             border-width: 2px;
+            
+        }
+        p {
+            text-decoration: underline;
         }
         title {
             text-align: left;
             text-decoration-line: underline;
+        }
+        .outside {
+            list-style-position: outside;
+        }
+        .inside {
+            list-style-position: inside;
         }
         .circle {
             list-style-type: circle;
@@ -30,6 +40,43 @@
         .varios1 .a{
             list-style-type:decimal;
         }
+        .varios1 .b{
+            list-style-type: decimal-leading-zero;
+        }
+        .varios1 .c {
+            list-style-type: lower-roman;
+        }
+        .varios2 .a {
+            list-style-type: upper-roman;
+        }
+        .varios2 .b {
+            list-style-type: lower-greek;
+        }
+        .varios2 .c {
+            list-style-type: decimal;
+        }
+        .varios3 .a {
+            list-style-type: lower-alpha;
+        }
+        .varios3 .b {
+            list-style-type: upper-alpha;
+        }
+        .varios3 .c {
+            list-style-type: armenian;
+        }
+        .varios4 .a {
+            list-style-type: georgian;
+        }
+        .varios4 .b {
+            list-style-type: lower-alpha;
+        }
+        .varios4 .c {
+            list-style-type: upper-alpha;
+        }
+        .imagenes  {
+            list-style-type: '⛔';
+        }
+        
     </style>
 
 </head>
@@ -40,8 +87,8 @@
         </tr>
         <tr class="outside">
             <td>
-                <ul class="circle">
-                    Viñeta tipo circle
+                <p>Viñeta tipo circle</p>
+                <ul class="circle">    
                     <li>
                         Primer elemento
                     </li>
@@ -54,8 +101,8 @@
                 </ul>
             </td>
             <td>
+                <p>Viñeta tipo disc</p>
                 <ul class="disc">
-                    Viñeta tipo circle
                     <li>
                         Primer elemento:
                     </li>
@@ -68,64 +115,64 @@
                 </ul>
             </td>
             <td>
-                <ul class="varios1">
-                    Viñeta tipo circle
+                <p>Viñeta varios1</p>
+                <ul class="varios1">    
                     <li class="a"> 
                         Primer elemento
                     </li>
-                    <li class="2">
+                    <li class="b">
                         Segundo elemento
                     </li>
-                    <li class="3">
+                    <li class="c">
                         Tercer elemento
                     </li>
                 </ul>
             </td>
             <td>
-                <ul class="varios2">
-                    Viñeta tipo circle
+                <p>Viñeta varios2</p>
+                <ul class="varios2">    
                     <li class="a">
                         Primer elemento
                     </li>
-                    <li class="2">
+                    <li class="b">
                         Segundo elemento
                     </li>
-                    <li class="3">
+                    <li class="c">
                         Tercer elemento
                     </li>
                 </ul>
             </td>
             <td>
-                <ul class="varios3">
-                    Viñeta tipo circle
+                <p>Viñeta varios3</p>
+                <ul class="varios3">    
                     <li class="a">
                         Primer elemento
                     </li>
-                    <li class="2">
+                    <li class="b">
                         Segundo elemento
                     </li>
-                    <li class="3">
+                    <li class="c">
                         Tercer elemento
                     </li>
                 </ul>
             </td>
             <td>
-                <ul class="varios4">
-                    Viñeta tipo circle
+                <p>Viñeta varios4</p>
+                <ul class="varios4">    
                     <li class="a">
                         Primer elemento
                     </li>
-                    <li class="2">
+                    <li class="b">
                         Segundo elemento
                     </li>
-                    <li class="3">
+                    <li class="c">
                         Tercer elemento
                     </li>
                 </ul>
             </td>
             <td>
-                <ul class="imagenes">
-                    Viñeta tipo circle
+                <p>Viñeta tipo imagenes</p>
+                <ul class="imagenes">    
                     <li>
                         Primer elemento
                     </li>
@@ -139,12 +186,12 @@
             </td>
         </tr>
         <tr>
-            <td colspan="7">POSICION OUTSIDE</td>
+            <td colspan="7">POSICION INSIDE</td>
         </tr>
         <tr class="inside">
             <td>
-                <ul class="circle">
-                    Viñeta tipo circle
+                <p>Viñeta tipo circle</p>
+                <ul class="circle">    
                     <li>
                         Primer elemento
                     </li>
@@ -157,8 +204,8 @@
                 </ul>
             </td>
             <td>
-                <ul class="disc">
-                    Viñeta tipo circle
+                <p>Viñeta tipo disc</p>
+                <ul class="disc">    
                     <li>
                         Primer elemento:
                     </li>
@@ -171,64 +218,64 @@
                 </ul>
             </td>
             <td>
-                <ul class="varios1">
-                    Viñeta tipo circle
+                <p>Viñeta tipo varios1</p>
+                <ul class="varios1">    
                     <li class="a">
                         Primer elemento
                     </li>
-                    <li class="2">
+                    <li class="b">
                         Segundo elemento
                     </li>
-                    <li class="3">
+                    <li class="c">
                         Tercer elemento
                     </li>
                 </ul>
             </td>
             <td>
-                <ul class="varios2">
-                    Viñeta tipo circle
+                <p>Viñeta tipo varios2</p>
+                <ul class="varios2">    
                     <li class="a">
                         Primer elemento
                     </li>
-                    <li class="2">
+                    <li class="b">
                         Segundo elemento
                     </li>
-                    <li class="3">
+                    <li class="c">
                         Tercer elemento
                     </li>
                 </ul>
             </td>
             <td>
-                <ul class="varios3">
-                    Viñeta tipo circle
+                <p>Viñeta tipo varios3</p>
+                <ul class="varios3">    
                     <li class="a">
                         Primer elemento
                     </li>
-                    <li class="2">
+                    <li class="b">
                         Segundo elemento
                     </li>
-                    <li class="3">
+                    <li class="c">
                         Tercer elemento
                     </li>
                 </ul>
             </td>
             <td>
-                <ul class="varios4">
-                    Viñeta tipo circle
+                <p>Viñeta tipo varios4</p>
+                <ul class="varios4">    
                     <li class="a">
                         Primer elemento
                     </li>
-                    <li class="2">
+                    <li class="b">
                         Segundo elemento
                     </li>
-                    <li class="3">
+                    <li class="c">
                         Tercer elemento
                     </li>
                 </ul>
             </td>
             <td>
-                <ul class="imagenes">
-                    Viñeta tipo circle
+                <p>Viñeta tipo imagenes</p>
+                <ul class="imagenes">    
                     <li>
                         Primer elemento
                     </li>

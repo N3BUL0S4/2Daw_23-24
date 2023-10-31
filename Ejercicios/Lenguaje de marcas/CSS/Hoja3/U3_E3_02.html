@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .t1 {
+            border-style: dotted;
+            border-width: 3px;
+            border-spacing: 50px;
+            empty-cells: hide;
+            caption-side: bottom;
+        }
+        .t1 td, .t1 th{
+            border: solid 3px;
+        }
+        .t2 {
+          border: solid 2px;
+          border-collapse: collapse;
+        }
+        .t2 td, .t2 th {
+            border: solid 2px;
+        }
+        .t2 thead {
+            background-color: green;
+        }
+        .t2 tbody {
+            background-color: yellow;
+        }
+        .d {
+            text-align: right;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <table class="t1">
+        <caption>2º DAW</caption>
+        <thead>
+            <th>Modulo</th>
+            <th>Profesor</th>
+            <th>Horas/semana</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>DWEC</td>
+                <td>Juan</td>
+                <td class="d">7</td>
+
+            </tr>
+            <tr>
+                <td>LMGSI</td>
+                <td>FRAN</td>
+                <td class="d">6</td>
+            </tr>
+            <tr>
+                <td>DWES</td>
+                <td></td>
+                <td class="d">8</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <hr>
+    <table class="t2">
+        <caption>2º DAW</caption>
+        <thead>
+            <th>Modulo</th>
+            <th>Profesor</th>
+            <th>Horas/semana</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>DWEC</td>
+                <td>Juan</td>
+                <td class="d">7</td>
+
+            </tr>
+            <tr>
+                <td>LMGSI</td>
+                <td>FRAN</td>
+                <td class="d">6</td>
+            </tr>
+            <tr>
+                <td>DWES</td>
+                <td></td>
+                <td class="d">8</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
