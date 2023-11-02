@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+	<title>Ejercicio CSS</title>
+	<style>
+		body{
+			background-color: yellow;
+		}
+		header{
+			background-image: url("img/banderas-del-mundo.jpg");
+			padding: 2% 35%;
+			background-size: 750px;
+		}
+		h1 {
+			background-color: green;
+			padding-top: 10px;
+			width: 350px;
+			height: 50px;
+			text-align: center;
+			color: purple;
+			text-shadow: white 4px 4px 4px;
+		}
+		#asia, #africa {
+			float: left;
+			width: 45%;
+			margin: 2%;
+		}
+		#africa {
+			background-color: aqua;
+		}
+		#asia {
+			background-color:aquamarine;
+		}
+		img {
+			width: 150px;
+			border: solid 1px;
+			float:left;
+			margin: 3%;
+		}
+		h2 {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header><h1>Banderas del mundo</h1></header>
+	<div id="africa">
+		<h2>ÁFRICA</h2>
+		<div><img title="Gambia" src="img/gambia.png"/></div>
+		<div><img title="Mauritania" src="img/mauritania.png"/></div>
+		<div><img title="Mozambique" src="img/mozambique.png"/></div>
+		<div><img title="Ruanda" src="img/ruanda.png"/></div>
+		<div><img title="Senegal" src="img/senegal.png"/></div>
+		<div><img title="Zambia" src="img/zambia.png"/></div>
+	</div>
+	<div id="asia">
+		<h2>ASIA</h2>
+		<div><img title="Afganistán" src="img/afganistan.png"/></div>
+		<div><img title="Bangladesh" src="img/bangladesh.png"/></div>
+		<div><img title="Camboya" src="img/camboya.png"/></div>
+		<div><img title="India" src="img/india.png"/></div>
+		<div><img title="Japón" src="img/japon.png"/></div>
+		<div><img title="Malasia" src="img/malasia.png"/></div>
+	</div>
+
+	
+</body>
+</html>
