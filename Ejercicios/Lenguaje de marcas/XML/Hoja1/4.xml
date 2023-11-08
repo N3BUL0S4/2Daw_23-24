@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<geografia_mundial>
+    <!-- Pais esta mal porque hay un pais dentro de otro -->
+    <paises>
+        <pais>España</pais>
+        <continente>Europa</continente>
+        <!-- Y capital esba mal puesto porque estaba abierta y cerrado cuando y puesto el atributo en el de cerrada y eso no es asi -->
+        <capital nombre="Madrid"/>
+    </paises>
+</geografia_mundial>

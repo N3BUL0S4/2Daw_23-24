@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deportistas>
+    <deportista>
+        <!--  Deporte estaba mal puesto -->
+        <deporte>Atletismo</deporte>
+        <nombre>Jesse Owens</nombre>
+    <!-- Faltaba cerrar deportista -->
+    </deportista>
+    <deportista>
+        <!--  Deporte estaba mal puesto -->
+        <deporte>Natación</deporte>
+        <nombre>Mark Spitz</nombre>
+    </deportista>
+</deportistas>
