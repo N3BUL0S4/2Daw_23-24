@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libros>
+    <libro>
+        <titulo>Maricarmen</titulo>
+        <autores>
+            <autor>Tu hijo</autor>
+        </autores>
+        <editorial>Esta en el</editorial>
+        <fechaPublic>1969</fechaPublic>
+        <isbn>Afterhours</isbn>
+    </libro>
+    <libro>
+        <titulo>Libro1</titulo>
+        <autores>
+            <autor>Autor1</autor>
+        </autores>
+        <editorial>Editorial1</editorial>
+        <fechaPublic>1111</fechaPublic>
+        <isbn>ISBN1</isbn>
+    </libro>
+    <libro>
+        <titulo>Libro2</titulo>
+        <autores>
+            <autor>Autor2</autor>
+        </autores>
+        <editorial>Editorial2</editorial>
+        <fechaPublic>2222</fechaPublic>
+        <isbn>ISBN2</isbn>
+    </libro>
+        <libro>
+        <titulo>Libro3</titulo>
+        <autores>
+            <autor>Autor3</autor>
+        </autores>
+        <editorial>Editorial3</editorial>
+        <fechaPublic>3333</fechaPublic>
+        <isbn>ISBN3</isbn>
+    </libro>
+    <libro>
+        <titulo>Libro4</titulo>
+        <autores>
+            <autor>Autor4</autor>
+        </autores>
+        <editorial>Editorial4</editorial>
+        <fechaPublic>4444</fechaPublic>
+        <isbn>ISBN4</isbn>
+    </libro>
+</libros>
