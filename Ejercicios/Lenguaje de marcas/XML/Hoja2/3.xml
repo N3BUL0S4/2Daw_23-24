@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDS>
+    <CD>
+        <titulo>Cuando zarpa el amor</titulo>
+        <interprete>Camela</interprete>
+        <pais>Epaña</pais>
+        <discografica>Camela</discografica>
+        <precio>10</precio>
+        <añoPubli>2004</añoPubli>
+
+    </CD>
+    <CD>
+        <titulo>Sueñoz Inalcanzables</titulo>
+        <interprete>Camela</interprete>
+        <pais>Epaña</pais>
+        <discografica>Camela</discografica>
+        <precio>10</precio>
+        <añoPubli>1995</añoPubli>
+    </CD>
+    <CD>
+        <titulo>Celos</titulo>
+        <interprete>Junco</interprete>
+        <pais>Epaña</pais>
+        <discografica>Junco</discografica>
+        <precio>20</precio>
+        <añoPubli>1986</añoPubli>
+    </CD>
+    <CD>
+        <titulo>Ramito de Violetas</titulo>
+        <interprete>Manzanita</interprete>
+        <pais>Epaña</pais>
+        <discografica>Manzanita</discografica>
+        <precio>40</precio>
+        <añoPubli>1981</añoPubli>        
+    </CD>
+    <CD>
+        <titulo>Toro Guapo</titulo>
+        <interprete>Fary</interprete>
+        <pais>Epaña</pais>
+        <discografica>Fary</discografica>
+        <precio>20</precio>
+        <añoPubli>1984</añoPubli>
+        
+    </CD>
+
+
+
+</CDS>

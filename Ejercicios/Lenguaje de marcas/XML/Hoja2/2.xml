@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liga>
+    <primera>
+        <equipo>
+            <nombre>Real betis sevillano BP</nombre>
+            <ciudad>Calasparra</ciudad>
+            <estadio>Sanchez Pijuan</estadio>
+            <presidente>Ronaldiño</presidente>
+            <añoFundacio>1999</añoFundacio>
+        </equipo>
+    </primera>
+    <segunda>
+        <nombre>Parskquel FC</nombre>
+        <ciudad>Plutonio</ciudad>
+        <estadio>Galactico Imperial VI</estadio>
+        <presidente>Pedro Iniesta messi</presidente>
+        <añoFundacio>2140</añoFundacio>
+    </segunda>
+</liga>

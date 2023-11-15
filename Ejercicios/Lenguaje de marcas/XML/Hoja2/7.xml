@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banco>
+  <cuenta>
+    <numeroCuenta>001</numeroCuenta>
+    <numeroSucursal>100</numeroSucursal>
+    <titulares>
+      <titular>
+        <NIF>12345678A</NIF>
+        <nombre>Juan</nombre>
+        <apellidos>Pérez López</apellidos>
+      </titular>
+      <titular>
+        <NIF>12345678B</NIF>
+        <nombre>Maria</nombre>
+        <apellidos>Gómez Torres</apellidos>
+      </titular>
+    </titulares>
+    <saldo>5000.00</saldo>
+    <operaciones>
+      <operacion>
+        <tipo>abono</tipo>
+        <importe>1000.00</importe>
+        <fecha>10/12/2000</fecha>
+      </operacion>
+      <operacion>
+        <tipo>cargo</tipo>
+        <importe>500.00</importe>
+        <fecha>10/12/2000</fecha>
+      </operacion>
+    </operaciones>
+  </cuenta>
+
+  <cuenta>
+    <numeroCuenta>002</numeroCuenta>
+    <numeroSucursal>200</numeroSucursal>
+    <titulares>
+      <titular>
+        <NIF>12345678B</NIF>
+        <nombre>Luis</nombre>
+        <apellidos>García Rodríguez</apellidos>
+      </titular>
+    </titulares>
+    <saldo>8000.00</saldo>
+    <operaciones>
+      <operacion>
+        <tipo>abono</tipo>
+        <importe>2000.00</importe>
+        <fecha>10/12/2000</fecha>
+      </operacion>
+      <operacion>
+        <tipo>cargo</tipo>
+        <importe>700.00</importe>
+        <fecha>10/12/2000</fecha>
+      </operacion>
+    </operaciones>
+  </cuenta>
+
+  <cuenta>
+    <numeroCuenta>003</numeroCuenta>
+    <numeroSucursal>300</numeroSucursal>
+    <titulares>
+      <titular>
+        <NIF>12345678C</NIF>
+        <nombre>Luis</nombre>
+        <apellidos>García Rodríguez</apellidos>
+      </titular>
+    </titulares>
+    <saldo>8000.00</saldo>
+    <operaciones>
+      <operacion>
+        <tipo>abono</tipo>
+        <importe>2000.00</importe>
+        <fecha>10/12/2000</fecha>
+      </operacion>
+      <operacion>
+        <tipo>cargo</tipo>
+        <importe>700.00</importe>
+        <fecha>10/12/2000</fecha>
+      </operacion>
+    </operaciones>
+  </cuenta>
+  <cuenta>
+    <numeroCuenta>004</numeroCuenta>
+    <numeroSucursal>400</numeroSucursal>
+    <titulares>
+      <titular>
+        <NIF>12345678D</NIF>
+        <nombre>Pco</nombre>
+        <apellidos>García Rodríguez</apellidos>
+      </titular>
+    </titulares>
+    <saldo>8000.00</saldo>
+    <operaciones>
+      <operacion>
+        <tipo>abono</tipo>
+        <importe>2000.00</importe>
+        <fecha>10/12/2000</fecha>
+      </operacion>
+      <operacion>
+        <tipo>cargo</tipo>
+        <importe>700.00</importe>
+        <fecha>10/12/2000</fecha>
+      </operacion>
+    </operaciones>
+  </cuenta>
+  <cuenta>
+    <numeroCuenta>005</numeroCuenta>
+    <numeroSucursal>500</numeroSucursal>
+    <titulares>
+      <titular>
+        <NIF>12345678E</NIF>
+        <nombre>Jose Francisco</nombre>
+        <apellidos>García Rodríguez</apellidos>
+      </titular>
+    </titulares>
+    <saldo>8000.00</saldo>
+    <operaciones>
+      <operacion>
+        <tipo>abono</tipo>
+        <importe>2000.00</importe>
+        <fecha>10/12/2000</fecha>
+      </operacion>
+      <operacion>
+        <tipo>cargo</tipo>
+        <importe>700.00</importe>
+        <fecha>2023-04-22</fecha>
+      </operacion>
+    </operaciones>
+  </cuenta>
+</banco>

@@ -1,0 +1,43 @@
+body {
+    height: 600px;
+    border-width: 2px 1em 4px 2em;
+    border-color: blue red green black;
+    border-style: solid dotted;
+    background-color: yellow;
+}
+div {
+    width: 300px; 
+    height: 200px;
+    border: 2px black dashed;
+    color: green;
+    background-image: url("img/amanecer.jpg");
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: 5;
+}
+img {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    z-index: 6;
+}
+p {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    padding: 15px;
+    border: 3px pink solid;
+    color:blue;
+    background-color: lightgray;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+h1 {
+    color: white;
+    background-color: red;
+    position: static;
+}

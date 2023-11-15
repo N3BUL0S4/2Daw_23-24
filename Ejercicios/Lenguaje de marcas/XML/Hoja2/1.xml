@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hoteles>
+    <hotel>
+        <nombre>Hotel 1</nombre>
+        <telefono>123456789</telefono>
+        <direccion>
+            <calle>Calle 1</calle>
+            <numero>1</numero>
+        </direccion>
+        <ciudad>Ciudad 1</ciudad>
+        <pais>País 1</pais>
+        <estrellas>400</estrellas>
+        <descripcion>Un hotel</descripcion>
+        <habitaciones>
+            <individuales>20</individuales>
+            <dobles>30</dobles>
+            <triples>10</triples>
+            <suites>5</suites>
+        </habitaciones>
+    </hotel>
+    <hotel>
+        <nombre>Hotel 2</nombre>
+        <telefono>123456789</telefono>
+        <direccion>
+            <calle>Calle 2</calle>
+            <numero>2</numero>
+        </direccion>
+        <ciudad>Ciudad 2</ciudad>
+        <pais>País 2</pais>
+        <estrellas>4</estrellas>
+        <descripcion>Un hotel 2</descripcion>
+        <habitaciones>
+            <individuales>30</individuales>
+            <dobles>60</dobles>
+            <triples>20</triples>
+            <suites>10</suites>
+        </habitaciones>
+    </hotel>
+</hoteles>

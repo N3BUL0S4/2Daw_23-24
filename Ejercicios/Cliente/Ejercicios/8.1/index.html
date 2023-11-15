@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Empresa de Paquetes</h1>
+    <h2>Formulario de Asistencia Técnica</h2>
+
+    <form action="" method="post" id="formu">
+        <label>incidencia</label>
+        <select name="incidencia" id="incidencia">
+            <option value="Cambio">Cambio</option>
+            <option value="Devolucion">Devolucion</option>
+            <option value="Reparacion">Reparacion</option>
+        </select>
+        <br/>
+        <label for="">Numero de serie</label>
+        <input type="text" name="numSerie" id="numSerie" minlength="6" maxlength="6">
+        <br/>
+        <label for="">Descripcion del problema</label><br/>
+        <textarea name="Descripcion" id="descripcion" maxlength="200" required="required"></textarea>
+        <br/>
+        <input type="submit" value="Enviar">
+    </form>
+    <script src="eje.js"></script>
+</body>
+</html>
