@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 let n1 = 1;
 let n2 = 1;
 let n3 = 1;
@@ -15,3 +16,4 @@ for (let i=0 ; i < 25; i++){
     n4=n5;
     n5=n;
 }
+>>>>>>> Stashed changes
