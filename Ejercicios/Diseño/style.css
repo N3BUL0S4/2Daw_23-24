@@ -1,0 +1,12 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    .div1 .div2 .div2;
+    grid-gap: 10px;
+}
+
+.contenedor div {
+    background-color: black;
+    color: white;
+}
