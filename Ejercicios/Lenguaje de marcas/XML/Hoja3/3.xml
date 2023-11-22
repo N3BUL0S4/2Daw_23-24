@@ -1,0 +1,31 @@
+<!DOCTYPE Libros [
+    <!ELEMENT Libros (Libro+)>
+    <!ELEMENT Libro (Codigo, Titulo, Editorial, Edicion, ISBN, NumeroPags, Autor)>
+    <!ELEMENT Codigo (#PCDATA)>
+    <!ELEMENT Titulo (#PCDATA)>
+    <!ELEMENT Editorial (#PCDATA)>
+    <!ELEMENT Edicion (#PCDATA)>
+    <!ELEMENT ISBN (#PCDATA)>
+    <!ELEMENT NumeroPags (#PCDATA)>
+    <!ELEMENT Autor (#PCDATA)>
+]>
+<Libros>
+    <Libro>
+        <Codigo>1</Codigo>
+        <Titulo>Titulo1</Titulo>
+        <Editorial>Editorial1</Editorial>
+        <Edicion>Edicion1</Edicion>
+        <ISBN>ISBN1</ISBN>
+        <NumeroPags>3</NumeroPags>
+        <Autor>Autor1</Autor>
+    </Libro>
+    <Libro>
+        <Codigo>2</Codigo>
+        <Titulo>Titulo2</Titulo>
+        <Editorial>Editorial2</Editorial>
+        <Edicion>Edicion2</Edicion>
+        <ISBN>ISBN2</ISBN>
+        <NumeroPags>4</NumeroPags>
+        <Autor>Autor2</Autor>
+    </Libro>
+</Libros>

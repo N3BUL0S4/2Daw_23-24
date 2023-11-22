@@ -1,0 +1,37 @@
+<!DOCTYPE Libros [
+    <!ELEMENT Libros (Libro+)>
+    <!ELEMENT Libro (Codigo, Titulo, Editorial, Edicion, ISBN, NumeroPags, Autores)>
+    <!ATTLIST Libro idioma CDATA "Castellano">
+    <!ELEMENT Codigo (#PCDATA)>
+    <!ELEMENT Titulo (#PCDATA)>
+    <!ELEMENT Editorial (#PCDATA)>
+    <!ELEMENT Edicion (#PCDATA)>
+    <!ELEMENT ISBN (#PCDATA)>
+    <!ELEMENT NumeroPags (#PCDATA)>
+    <!ELEMENT Autores (Autor+)>
+    <!ELEMENT Autor (#PCDATA)>
+]>
+<Libros>
+    <Libro>
+        <Codigo>1</Codigo>
+        <Titulo>Titulo1</Titulo>
+        <Editorial>Editorial1</Editorial>
+        <Edicion>Edicion1</Edicion>
+        <ISBN>ISBN1</ISBN>
+        <NumeroPags>3</NumeroPags>
+        <Autores>
+            <Autor>Autor1</Autor>
+        </Autores>
+    </Libro>
+    <Libro idioma="Inglis">
+        <Codigo>2</Codigo>
+        <Titulo>Titulo2</Titulo>
+        <Editorial>Editorial2</Editorial>
+        <Edicion>Edicion2</Edicion>
+        <ISBN>ISBN2</ISBN>
+        <NumeroPags>4</NumeroPags>
+        <Autores>
+            <Autor>Autor2</Autor>
+        </Autores>
+    </Libro>
+</Libros>

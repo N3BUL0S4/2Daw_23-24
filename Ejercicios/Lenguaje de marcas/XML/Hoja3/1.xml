@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensajes [
+    <!ELEMENT mensajes (mensaje+)>
+    <!ELEMENT mensaje (telefono, fecha, hora, contenido)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT hora (#PCDATA)>
+    <!ELEMENT contenido (#PCDATA)>
+]>
+
+<mensajes>
+    <mensaje>
+        <telefono>123456789</telefono>
+        <fecha>11/11/1111</fecha>
+        <hora>1:11</hora>
+        <contenido>Contenido1</contenido>
+    </mensaje>
+    <mensaje>
+        <telefono>987654321</telefono>
+        <fecha>22/22/2222</fecha>
+        <hora>2:22</hora>
+        <contenido>Contenido2</contenido>
+    </mensaje>
+</mensajes>
