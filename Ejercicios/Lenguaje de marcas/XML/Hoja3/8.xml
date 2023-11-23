@@ -1,0 +1,13 @@
+<!DOCTYPE Aplicaciones [
+    <!ELEMENT Aplicaciones (Aplicacion)>
+    <!ELEMENT Aplicacion (Id, Nombre, Descripcion, Desarrollador, Version, Espacio, FechaInstalacion, UltimaEkecucion)>
+    <!ELEMENT Id (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Dscripcion (#PCDATA)>
+    <!ELEMENT Desarrollodar (#PCDATA)>
+    <!ELEMENT Version (#PCDATA)>
+    <!ELEMENT Espacio (#PCDATA)>
+    <!ATTLIST Espacio directorio directorio (SD,Memoria Interna, Ambos)>
+]>
+<Aplicaciones>
+</Aplicaciones>

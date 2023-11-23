@@ -1,0 +1,58 @@
+<!DOCTYPE Vehiculos [
+    <!ELEMENT Vehiculos (Vehiculo+)>
+    <!ELEMENT Vehiculo (NumBastidor, Marca, Modelo, Matricula, Potencia, Plazas, NumeroPuertas)>
+    <!ELEMENT NumBastidor (#PCDATA)>
+    <!ELEMENT Marca (#PCDATA)>
+    <!ELEMENT Modelo (#PCDATA)>
+    <!ELEMENT Matricula (#PCDATA)>
+    <!ELEMENT Potencia (#PCDATA)>
+    <!ELEMENT Plazas (#PCDATA)>
+    <!ELEMENT NumeroPuertas (#PCDATA)>
+]>
+<Vehiculos>
+    <Vehiculo>
+        <NumBastidor>1</NumBastidor>
+        <Marca>Marca1</Marca>
+        <Modelo>Modelo1</Modelo>
+        <Matricula>Matricula1</Matricula>
+        <Potencia>1HP</Potencia>
+        <Plazas>1</Plazas>
+        <NumeroPuertas>3</NumeroPuertas>
+    </Vehiculo>
+    <Vehiculo>
+        <NumBastidor>2</NumBastidor>
+        <Marca>Marca2</Marca>
+        <Modelo>Modelo2</Modelo>
+        <Matricula>Matricula2</Matricula>
+        <Potencia>2HP</Potencia>
+        <Plazas>2</Plazas>
+        <NumeroPuertas>4</NumeroPuertas>
+    </Vehiculo>
+    <Vehiculo>
+        <NumBastidor>3</NumBastidor>
+        <Marca>Marca3</Marca>
+        <Modelo>Modelo3</Modelo>
+        <Matricula>Matricula3</Matricula>
+        <Potencia>3HP</Potencia>
+        <Plazas>3</Plazas>
+        <NumeroPuertas>5</NumeroPuertas>
+    </Vehiculo>
+    <Vehiculo>
+        <NumBastidor>4</NumBastidor>
+        <Marca>Marca4</Marca>
+        <Modelo>Modelo4</Modelo>
+        <Matricula>Matricula4</Matricula>
+        <Potencia>4HP</Potencia>
+        <Plazas>4</Plazas>
+        <NumeroPuertas>6</NumeroPuertas>
+    </Vehiculo>
+    <Vehiculo>
+        <NumBastidor>5</NumBastidor>
+        <Marca>Marca5</Marca>
+        <Modelo>Modelo5</Modelo>
+        <Matricula>Matricula5</Matricula>
+        <Potencia>5HP</Potencia>
+        <Plazas>5</Plazas>
+        <NumeroPuertas>7</NumeroPuertas>
+    </Vehiculo>
+</Vehiculos>

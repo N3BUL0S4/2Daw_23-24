@@ -1,17 +1,46 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |     background-color $background 
- *   |                      ^^^^^^^^^^^
- *   '
- *   style.scss 4:22  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      background-color $background \d\a   \2502                       ^^^^^^^^^^^\a   \2575 \a   style.scss 4:22  root stylesheet";
+a:visited, a:link, a:active {
+  text-decoration: none;
 }
+
+body {
+  margin: 0;
+}
+body .top-header {
+  background-color: rgb(0, 10, 97);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0 3%;
+}
+body .top-header a {
+  color: rgb(255, 255, 255);
+}
+body .top-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .top-header .container .top-header-left,
+body .top-header .container .top-header-right {
+  display: flex;
+  align-items: center;
+}
+body .top-header .container .top-header-block,
+body .top-header .container .social-block,
+body .top-header .container .login-block {
+  margin-right: 20px;
+}
+body .top-header .container .social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-right: 40px;
+}
+body .top-header .container .social-list li {
+  display: inline-block;
+  margin-right: 30px;
+}
+body .top-header .container .login-block {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

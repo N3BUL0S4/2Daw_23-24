@@ -1,0 +1,58 @@
+<!DOCTYPE Comunidad [
+    <!ELEMENT Comunidad (Vecino+)>
+    <!ELEMENT Vecino (Codigo, Nombre, Apellido, Portal, PisoLetra, CCC, Cargo?)>
+    <!ELEMENT Codigo (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Apellido (#PCDATA)>
+    <!ELEMENT Portal (#PCDATA)>
+    <!ELEMENT PisoLetra (#PCDATA)>
+    <!ELEMENT CCC (#PCDATA)>
+    <!ELEMENT Cargo EMPTY>
+    <!ATTLIST Cargo cargo (Presidente|Vicepresidente|Secretario|Vocal) >
+]>
+<Comunidad>
+    <Vecino>
+        <Codigo>Codigo1</Codigo>
+        <Nombre>Nombre1</Nombre>
+        <Apellido>Apellidos1</Apellido>
+        <Portal>Portal1</Portal>
+        <PisoLetra>1A</PisoLetra>
+        <CCC>31231231234</CCC>
+        <Cargo cargo="Presidente"/>
+    </Vecino>
+    <Vecino>
+        <Codigo>Codigo2</Codigo>
+        <Nombre>Nombre2</Nombre>
+        <Apellido>Apellidos2</Apellido>
+        <Portal>Portal2</Portal>
+        <PisoLetra>2B</PisoLetra>
+        <CCC>31231231234</CCC>
+        <Cargo cargo="Vicepresidente"/>
+    </Vecino>
+    <Vecino>
+        <Codigo>Codigo3</Codigo>
+        <Nombre>Nombre3</Nombre>
+        <Apellido>Apellidos3</Apellido>
+        <Portal>Portal3</Portal>
+        <PisoLetra>3C</PisoLetra>
+        <CCC>31231231234</CCC>
+        <Cargo cargo="Secretario"/>
+    </Vecino>
+    <Vecino>
+        <Codigo>Codigo4</Codigo>
+        <Nombre>Nombre4</Nombre>
+        <Apellido>Apellidos4</Apellido>
+        <Portal>Portal4</Portal>
+        <PisoLetra>4D</PisoLetra>
+        <CCC>31231231234</CCC>
+        <Cargo cargo="Vocal"/>
+    </Vecino>
+    <Vecino>
+        <Codigo>Codigo5</Codigo>
+        <Nombre>Nombre5</Nombre>
+        <Apellido>Apellidos5</Apellido>
+        <Portal>Portal5</Portal>
+        <PisoLetra>5D</PisoLetra>
+        <CCC>31231231234</CCC>
+    </Vecino>
+</Comunidad>

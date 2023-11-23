@@ -1,0 +1,29 @@
+<!DOCTYPE Periodico [
+    <!ELEMENT Periodico (Articulo+)>
+    <!ELEMENT Articulo (Titular, Subtitulo?, Cuerpo, Autores)>
+    <!ATTLIST Articulo Fecha CDATA #IMPLIED>
+    <!ELEMENT Titular (#PCDATA)>
+    <!ELEMENT Subtitulo (#PCDATA)>
+    <!ELEMENT Cuerpo (#PCDATA)>
+    <!ELEMENT Autores (Autor+)>
+    <!ELEMENT Autor (#PCDATA)>
+]>
+<Periodico>
+    <Articulo>
+        <Titular>Titular1</Titular>
+        <Subtitulo>Subtitulo1</Subtitulo>
+        <Cuerpo>Cuerpo1</Cuerpo>
+        <Autores>
+            <Autor>Autor1</Autor>
+        </Autores>
+    </Articulo>
+    <Articulo>
+        <Titular>Titular2</Titular>
+        <Subtitulo>Subtitulo2</Subtitulo>
+        <Cuerpo>Cuerpo2</Cuerpo>
+        <Autores>
+            <Autor>Autor2</Autor>
+            <Autor>Autor3</Autor>
+        </Autores>
+    </Articulo>
+</Periodico>
