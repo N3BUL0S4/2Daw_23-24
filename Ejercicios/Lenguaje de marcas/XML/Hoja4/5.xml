@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tablaPeriodica xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="5.xsd">
+    <atomo>
+        <nombre>a</nombre>
+        <simbolo>A</simbolo>
+        <numeroAtomico>1</numeroAtomico>
+        <pesoAtomico>1</pesoAtomico>
+        <ebullicion unidad="centigrados">1</ebullicion>
+        <densidad unidad="a">1</densidad>
+    </atomo>
+    <atomo>
+        <nombre>b</nombre>
+        <simbolo>B</simbolo>
+        <numeroAtomico>2</numeroAtomico>
+        <pesoAtomico>2</pesoAtomico>
+        <ebullicion unidad="kelvin">2</ebullicion>
+        <densidad unidad="a">2</densidad>
+    </atomo>
+</tablaPeriodica>

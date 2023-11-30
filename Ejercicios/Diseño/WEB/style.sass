@@ -1,0 +1,122 @@
+$primary-color: rgb(0, 10, 97)
+$secondary-color: rgb(255, 255, 255)
+$font: "Courier New", Courier, monospace
+$terciary-color: green
+a:visited, a:link, a:active 
+    text-decoration: none
+
+body
+    margin: 0
+    font-family: $font
+    
+    .top-header
+        background-color: $primary-color
+        color: $secondary-color
+        text-decoration: none
+        padding: 0 3%
+        a
+            color: $secondary-color
+        .container
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+            .top-header-left,
+            .top-header-right
+                display: flex
+                align-items: center
+            
+            .top-header-block,
+            .social-block,
+            .login-block
+                margin-right: 20px
+
+            .social-list
+                list-style: none
+                padding: 0
+                margin: 0
+                padding-right: 40px
+                li
+                    display: inline-block
+                    margin-right: 30px
+            .login-block
+                margin: 0
+    
+    .main-header
+        .container
+            display: flex
+            align-content: center
+            align-items: center
+            .logo-wrap 
+                flex: 15%
+                img
+                    width: 100px
+                    height: 100px
+                    display: flex
+            .nav-wrap
+                flex: 85%    
+                .menu-list
+                    list-style: none
+                    padding: 0 
+                    display: flex
+                    justify-content: flex-end
+                    margin-right: 5% 
+                    li
+                        margin: 10px
+                    .menu-parent
+                        .sub-menu
+                            list-style: none
+                            display: none
+                            z-index: 2
+                            position: absolute
+                            background-color: $secondary-color
+                        &:hover .sub-menu
+                            display: inherit
+                            .menu-parent
+                                .sub-menu
+                                    display: none
+                                    position: absolute
+                                    background-color: $secondary-color
+                                &:hover .sub-menu
+                                    display: inherit
+            #bar, #close
+                display: none
+
+    .banner
+        display: flex
+        position: relative
+        .container
+            display: flexbox
+            position: absolute
+            top: 40%
+            left: 50%
+            transform: translate(-50%, -50%)
+            text-align: center
+            color: $secondary-color
+            z-index: 2
+            h1  
+                font-size: 250%
+                text-transform: uppercase
+                font-weight: bold
+    .page-heading
+        margin: 3% 0%
+        .container
+            display: flex
+            justify-content: center
+            align-items: center
+            h2
+                text-transform: uppercase
+                font-weight: bold
+                font-size: 200%
+    .learn-courses
+        .container
+            margin: 0% 2%
+            .box-wrap
+                .learn-desining-banner
+                    position: absolute
+                    top: 51% 
+                    left: 4%
+                    
+                    background-color: $terciary-color
+                    color: $secondary-color
+                    padding: 5% 18%

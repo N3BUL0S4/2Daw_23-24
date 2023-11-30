@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="tablaPeriodica">
+        <xs:sequence>
+            <xs:element name="atomo" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="simbolo" type="simbolo"/>
+                        <xs:element name="numeroAtomico" type="xs:decimal"/>
+                        <xs:element name="pesoAtomico" type="xs:decimal"/>
+                        <xs:element name="ebullicion" type="ebullicion"/>
+                        <xs:element name="densidad" type="densidad"/>
+                    </xs:sequence>
+                    <xs:attribute name="estado" type="estado"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ebullicion" mixed="true">
+        <xs:attribute name="unidad" type="unidad" default="centigrados"/>
+    </xs:complexType>
+
+    <xs:complexType name="densidad" mixed="true">
+        <xs:attribute name="unidad" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:simpleType name="unidad">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="centigrados"/>
+            <xs:enumeration value="kelvin"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="estado">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="solido"/>
+            <xs:enumeration value="liquido"/>
+            <xs:enumeration value="gaseoso"/>
+        </xs:restriction>
+    </xs:simpleType>
+   
+    <xs:simpleType name="simbolo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{1,3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="tablaPeriodica" type="tablaPeriodica"></xs:element>
+</xs:schema>

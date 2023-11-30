@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="periodico">
+        <xs:sequence>
+            <xs:element name="articulo" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="titular" type="xs:string"/>
+                        <xs:element name="subtitulo" type="xs:string" minOccurs="0"/>
+                        <xs:element name="cuerpo" type="xs:string"/>
+                        <xs:element name="autores" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                    <xs:attribute name="fecha" type="xs:date" use="optional"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="periodico" type="periodico"></xs:element>
+</xs:schema>

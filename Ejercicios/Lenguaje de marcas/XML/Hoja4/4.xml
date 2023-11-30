@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<periodico xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="4.xsd">
+    <articulo fecha="2000-02-02">
+        <titular>a</titular>
+        <cuerpo>a</cuerpo>
+        <autores>a</autores>
+    </articulo>
+    <articulo>
+        <titular>b</titular>
+        <cuerpo>b</cuerpo>
+        <autores>b</autores>
+        <autores>c</autores>
+    </articulo>
+</periodico>

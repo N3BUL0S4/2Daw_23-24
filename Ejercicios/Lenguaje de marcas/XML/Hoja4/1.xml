@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<heladeria xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="1.xsd">
+    <helado>
+        <sabor>chocolate</sabor>
+        <tipo>cono</tipo>
+        <tamañ>grande</tamañ>
+    </helado>
+    <helado>
+        <sabor>fresa</sabor>
+        <tipo>tarrina</tipo>
+        <tamañ>pequeño</tamañ>
+    </helado>
+</heladeria>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="sabor">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="chocolate"/>
+            <xs:enumeration value="fresa"/>
+            <xs:enumeration value="vainilla"/>
+            <xs:enumeration value="limón"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="cono"/>
+            <xs:enumeration value="tarrina"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tamaño">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="grande"/>
+            <xs:enumeration value="mediano"/>
+            <xs:enumeration value="pequeño"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="helado">
+        <xs:sequence>
+            <xs:element name="sabor" type="sabor"/>
+            <xs:element name="tipo" type="tipo"/>
+            <xs:element name="tamañ" type="tamaño"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="heladeria">
+        <xs:sequence>
+            <xs:element name="helado" type="helado" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>  
+    <xs:element name="heladeria" type="heladeria"></xs:element>
+</xs:schema>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehiculos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="7.xsd">
+    <vehiculo typoVehiculo="coche">    
+        <Bastidor>1</Bastidor>
+        <Marca>Marca1</Marca>
+        <Modelo>Modelo1</Modelo>
+        <Matricula>Matricula1</Matricula>
+        <Potencia>1HP</Potencia>
+        <Plazas>1</Plazas>
+        <Puertas>3</Puertas>
+    </vehiculo>
+    <vehiculo typoVehiculo="moto">
+        <Bastidor>2</Bastidor>
+        <Marca>Marca2</Marca>
+        <Modelo>Modelo2</Modelo>
+        <Matricula>Matricula2</Matricula>
+        <Potencia>2HP</Potencia>
+        <Plazas>2</Plazas>
+        <Puertas>4</Puertas>
+    </vehiculo>
+    <vehiculo>
+        <Bastidor>3</Bastidor>
+        <Marca>Marca3</Marca>
+        <Modelo>Modelo3</Modelo>
+        <Matricula>Matricula3</Matricula>
+        <Potencia>3HP</Potencia>
+        <Plazas>3</Plazas>
+        <Puertas>5</Puertas>
+    </vehiculo>
+    <vehiculo>
+        <Bastidor>4</Bastidor>
+        <Marca>Marca4</Marca>
+        <Modelo>Modelo4</Modelo>
+        <Matricula>Matricula4</Matricula>
+        <Potencia>4HP</Potencia>
+        <Plazas>4</Plazas>
+        <Puertas>6</Puertas>
+    </vehiculo>
+    <vehiculo>
+        <Bastidor>5</Bastidor>
+        <Marca>Marca5</Marca>
+        <Modelo>Modelo5</Modelo>
+        <Matricula>Matricula5</Matricula>
+        <Potencia>5HP</Potencia>
+        <Plazas>5</Plazas>
+        <Puertas>7</Puertas>
+</vehiculo> 
+</vehiculos>

@@ -89,47 +89,4 @@ body .main-header .container .nav-wrap .menu-list .menu-parent:hover .sub-menu .
 }
 body .main-header .container #bar, body .main-header .container #close {
   display: none;
-}
-body .banner {
-  display: flex;
-  position: relative;
-}
-body .banner .container {
-  display: flexbox;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: rgb(255, 255, 255);
-  z-index: 2;
-}
-body .banner .container h1 {
-  font-size: 250%;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-body .page-heading {
-  margin: 3% 0%;
-}
-body .page-heading .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-body .page-heading .container h2 {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 200%;
-}
-body .learn-courses .container {
-  margin: 0% 2%;
-}
-body .learn-courses .container .box-wrap .learn-desining-banner {
-  position: absolute;
-  top: 51%;
-  left: 4%;
-  background-color: green;
-  color: rgb(255, 255, 255);
-  padding: 5% 18%;
 }/*# sourceMappingURL=style.css.map */

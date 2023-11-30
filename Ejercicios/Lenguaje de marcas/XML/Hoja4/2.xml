@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+    xs:noNamespaceSchemaLocation="2.xsd">
+    <libro>
+        <codigo>a</codigo>
+        <titulo>a</titulo>
+        <Editorial>a</Editorial>        
+        <Edidcion>a</Edidcion>
+        <ISBN>a</ISBN>
+        <pags>1</pags>
+        <autor>a</autor>
+    </libro>
+    <libro>
+        <codigo>b</codigo>
+        <titulo>b</titulo>
+        <Editorial>b</Editorial>
+        <Edidcion>b</Edidcion>
+        <ISBN>b</ISBN>
+        <pags>2</pags>
+        <autor>b</autor>
+    </libro>
+</biblioteca>

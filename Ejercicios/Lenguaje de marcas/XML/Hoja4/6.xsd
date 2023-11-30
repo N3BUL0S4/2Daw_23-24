@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="vecindario">
+        <xs:sequence>
+            <xs:element name="vecino" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="CodVecino" type="xs:string"/>
+                        <xs:element name="Nombre" type="xs:string"/>
+                        <xs:element name="Portal" type="xs:decimal"/>
+                        <xs:element name="PisoyLetra" type="xs:string"/>
+                        <xs:element name="CCC" type="xs:string"/>
+                        <xs:element name="Cargo" type="cargo" minOccurs="0"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="cargo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Presidente"/>
+            <xs:enumeration value="VicePresidente"/>
+            <xs:enumeration value="Secretario"/>
+            <xs:enumeration value="Vocal"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="vecindario" type="vecindario"/>
+</xs:schema>

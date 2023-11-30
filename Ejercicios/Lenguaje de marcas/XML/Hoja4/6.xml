@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vecindario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="6.xsd">
+    <vecino>
+        <CodVecino>1</CodVecino>
+        <Nombre>a</Nombre>
+        <Portal>1</Portal>
+        <PisoyLetra>1A</PisoyLetra>
+        <CCC>1</CCC>
+        <Cargo>Presidente</Cargo>
+    </vecino>
+    <vecino>
+        <CodVecino>1</CodVecino>
+        <Nombre>b</Nombre>
+        <Portal>2</Portal>
+        <PisoyLetra>2b</PisoyLetra>
+        <CCC>2</CCC>
+    </vecino>
+</vecindario>
