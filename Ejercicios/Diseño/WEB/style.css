@@ -47,6 +47,7 @@ body .main-header .container {
   display: flex;
   align-content: center;
   align-items: center;
+  position: relative;
 }
 body .main-header .container .logo-wrap {
   flex: 15%;
@@ -59,7 +60,12 @@ body .main-header .container .logo-wrap img {
 body .main-header .container .nav-wrap {
   flex: 85%;
 }
-body .main-header .container .nav-wrap .menu-list {
+@media screen and (max-width: 700px) {
+  body .main-header .container .nav-wrap {
+    display: none;
+  }
+}
+body .main-header .container .nav-wrap .nav-desktop .menu-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -67,25 +73,25 @@ body .main-header .container .nav-wrap .menu-list {
   justify-content: flex-end;
   margin-right: 5%;
 }
-body .main-header .container .nav-wrap .menu-list li {
+body .main-header .container .nav-wrap .nav-desktop .menu-list li {
   margin: 10px;
 }
-body .main-header .container .nav-wrap .menu-list .menu-parent .sub-menu {
+body .main-header .container .nav-wrap .nav-desktop .menu-list .menu-parent .sub-menu {
   list-style: none;
   display: none;
   z-index: 2;
   position: absolute;
   background-color: rgb(255, 255, 255);
 }
-body .main-header .container .nav-wrap .menu-list .menu-parent:hover .sub-menu {
+body .main-header .container .nav-wrap .nav-desktop .menu-list .menu-parent:hover .sub-menu {
   display: inherit;
 }
-body .main-header .container .nav-wrap .menu-list .menu-parent:hover .sub-menu .menu-parent .sub-menu {
+body .main-header .container .nav-wrap .nav-desktop .menu-list .menu-parent:hover .sub-menu .menu-parent .sub-menu {
   display: none;
   position: absolute;
   background-color: rgb(255, 255, 255);
 }
-body .main-header .container .nav-wrap .menu-list .menu-parent:hover .sub-menu .menu-parent:hover .sub-menu {
+body .main-header .container .nav-wrap .nav-desktop .menu-list .menu-parent:hover .sub-menu .menu-parent:hover .sub-menu {
   display: inherit;
 }
 body .main-header .container #bar, body .main-header .container #close {
@@ -189,9 +195,15 @@ body .page-footer {
   background-color: black;
   color: rgb(255, 255, 255);
 }
+body .page-footer .footer-second-section {
+  left: 100%;
+}
 body .page-footer .footer-second-section .container {
   display: flex;
   justify-content: center;
+}
+body .page-footer .footer-second-section .container a {
+  color: rgb(255, 255, 255);
 }
 body .page-footer .footer-second-section .container hr {
   width: 40%;
@@ -206,5 +218,13 @@ body .page-footer .footer-second-section .container .social-list {
 }
 body .page-footer .footer-second-section .container .social-list li {
   display: inline-flex;
-  margin-right: 5px;
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+}
+body .page-footer .footer-last-section .container {
+  display: flex;
+  justify-content: center;
+}
+body .page-footer .footer-last-section .container a {
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=style.css.map */

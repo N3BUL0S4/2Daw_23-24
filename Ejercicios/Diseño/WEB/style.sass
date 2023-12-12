@@ -54,32 +54,41 @@ body
                     height: 100px
                     display: flex
             .nav-wrap
-                flex: 85%    
-                .menu-list
-                    list-style: none
-                    padding: 0 
-                    margin: 0
-                    display: flex
-                    justify-content: flex-end
-                    margin-right: 5% 
-                    li
-                        margin: 10px
-                    .menu-parent
-                        .sub-menu
-                            list-style: none
-                            display: none
-                            z-index: 2
-                            position: absolute
-                            background-color: $secondary-color
-                        &:hover .sub-menu
-                            display: inherit
-                            .menu-parent
-                                .sub-menu
-                                    display: none
-                                    position: absolute
-                                    background-color: $secondary-color
-                                &:hover .sub-menu
-                                    display: inherit
+                flex: 85%
+                @media screen and (max-width: 700px)
+                    .nav-desktop a:not(:first-child) 
+                    display: none
+                .nav-desktop    
+                    .menu-list
+                        list-style: none
+                        padding: 0 
+                        margin: 0
+                        display: flex
+                        justify-content: flex-end
+                        margin-right: 5% 
+                        li
+                            margin: 10px
+                        .menu-parent
+                            .sub-menu
+                                list-style: none
+                                display: none
+                                z-index: 2
+                                position: absolute
+                                background-color: $secondary-color
+                            &:hover .sub-menu
+                                display: inherit
+                                .menu-parent
+                                    .sub-menu
+                                        display: none
+                                        position: absolute
+                                        background-color: $secondary-color
+                                    &:hover .sub-menu
+                                        display: inherit
+            
+            @media screen and (max-width: 700px)
+            #bar.responsive,
+            #close.responsive 
+            position: relative
             #bar, #close
                 display: none
 
@@ -165,13 +174,14 @@ body
         background-color: black
         color: $secondary-color
         .footer-second-section
+            left: 100%
             .container
                 display: flex
                 justify-content: center
+                a
+                    color: $secondary-color
                 hr
                     width: 40%
-                .footer-line
-
                 .social-list
                     position: absolute
                     display: flex
@@ -181,4 +191,11 @@ body
                     padding-right: 10px
                     li
                         display: inline-flex
-                        margin-right: 5px
+                        margin-left: 10px
+                        color: $secondary-color
+        .footer-last-section
+            .container
+                display: flex
+                justify-content: center
+                a
+                    color: $secondary-color
