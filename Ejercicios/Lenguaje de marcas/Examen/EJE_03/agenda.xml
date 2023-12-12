@@ -1,0 +1,75 @@
+<fichas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="agenda.xsd">
+    <ficha categoria="empresa">
+        <Nombre>Jose Luis</Nombre>
+        <apellido1>Domingez</apellido1>
+        <apellido2>Rodrigez</apellido2>
+        <telefonosNacio>
+            <telefono>987654321</telefono>
+            <telefono>891372319</telefono>
+            <telefono>789723493</telefono>
+            <telefono>612389763</telefono>
+            <telefono>613209473</telefono>
+        </telefonosNacio>
+        <telefonosInter>
+            <telefono>+23 987654321</telefono>
+            <telefono>+34 235798234</telefono>
+        </telefonosInter>
+        <emails>
+            <email>Joseluis123@asdfa.com</email>
+            <email>Joseluis321@asdfa.com</email>
+        </emails>
+        <direciones_postales>
+            <direcon_postal>
+                <Calle>Domingas</Calle>
+                <codigo_postal>99999</codigo_postal>
+                <ciudad>Pliego</ciudad>
+                <Pais>Carabanchel</Pais>
+            </direcon_postal>
+            <direcon_postal>
+                <Calle>Domingos</Calle>
+                <codigo_postal>13123</codigo_postal>
+                <ciudad>Calasparra</ciudad>
+                <Pais>Kazagistan</Pais>
+            </direcon_postal>
+        </direciones_postales>
+    </ficha>
+    <ficha categoria="particular">
+        <Nombre>Paco</Nombre>
+        <apellido1>Prieto</apellido1>
+        <telefonosNacio></telefonosNacio>
+        <telefonosInter></telefonosInter>
+        <emails></emails>
+        <direciones_postales></direciones_postales>
+    </ficha>
+    <ficha categoria="comercial">
+        <Nombre>Antonio</Nombre>
+        <apellido1>A</apellido1>
+        <apellido2>B</apellido2>
+        <telefonosNacio>
+            <telefono>609237098</telefono>
+        </telefonosNacio>
+        <telefonosInter></telefonosInter>
+        <emails>
+            <email>Antonioprito123@gmail.com</email>
+        </emails>
+        <direciones_postales></direciones_postales>
+    </ficha>
+    <ficha categoria="particular">
+        <Nombre>Faustino</Nombre>
+        <apellido1>Marrano</apellido1>
+        <telefonosNacio></telefonosNacio>
+        <telefonosInter>
+            <telefono>+12 145908792</telefono>
+        </telefonosInter>
+        <emails></emails>
+        <direciones_postales>
+            <direcon_postal>
+                <Calle>Pajaritas de las nieves</Calle>
+                <codigo_postal>12345</codigo_postal>
+                <ciudad>Banglades</ciudad>
+                <Pais>Malasia</Pais>
+            </direcon_postal>
+        </direciones_postales>
+    </ficha>
+</fichas>

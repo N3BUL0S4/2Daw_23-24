@@ -1,19 +1,24 @@
 package com.example.demo.Service;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 
 import org.springframework.stereotype.Service;
-
+import com.example.demo.repository.OrderRepository;
+import com.example.demo.repository.UserEntity;
 import com.example.demo.user.User;
 
 
 
 @Service
 public class UserService {
-	HashMap<Long, User> mapuser = insertaUsers();
+	private OrderRepository users;
 
-	public HashMap<Long, User> consultarUsuarios() {
-		return mapuser;
+	public List<User> consultarUsuarios() {
+		List   <UserEntity> lstUserEntity= users.findAll();
+		lstUserEntity.stream().map();
 	}
 
 	public User consultarUsuario( final Long id) {
@@ -36,12 +41,4 @@ public class UserService {
 		mapuser.remove(id);
 	}
 
-	public HashMap<Long, User> insertaUsers() {
-		HashMap<Long, User> users = new HashMap<>();
-		users.put(1L, new User(1L, "Pepe", "Alfredo", 12312323, "pepealfredodominguez@gmail.com"));
-		users.put(2L, new User(2L, "Paco", "Alfredo", 12312323, "pacoalfredodominguez@gmail.com"));
-		users.put(3L, new User(3L, "Alfredo", "Paco", 12312323, "pepealfredodominguez@gmail.com"));
-		users.put(4L, new User(4L, "A", "Paco", 12312323, "pepealfredodominguez@gmail.com"));
-		return users;
-	}
 }

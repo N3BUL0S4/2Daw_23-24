@@ -1,0 +1,64 @@
+body {
+    background-color: aquamarine;
+    text-align: center;
+}
+.cavecera,a {
+    color: darkgreen;
+}
+a:visited {
+    color: orangered;
+}
+.museos{
+    text-align: left;
+    font-size: large;
+}
+h2 {
+    margin-top: 90px;
+    font-weight: bold;
+}
+.museos>div,.museos>div img {
+    background-color: white;
+    border: 10px solid;
+}
+.museos>.british,.museos>.National,
+.british>div,.National>div,
+.britain>.imagen>img
+{
+    border-color: orangered;
+}
+.museos>.britain,.britain>div,
+.british>.imagen>img,
+.National>.imagen>img{
+    border-color: orange;
+}
+.british,.National,.britain {
+    display: inline-flex ;
+    margin: 2%;
+}
+.museos>.britain  {
+    display: flex;
+    justify-content: flex-end;
+}
+.britain>.texto {
+    margin-left: 50px;
+}
+
+
+.imagen {
+    margin: 4%;
+    border: 10px solid;
+}
+img {
+    margin-bottom: 0%;
+    display: flex;
+}
+/* .britain .imagen{
+ } */
+.texto {
+    display: flexbox;
+}
+
+footer{ 
+    display: flex;
+    margin-left: 50px;
+}

@@ -58,6 +58,7 @@ body
                 .menu-list
                     list-style: none
                     padding: 0 
+                    margin: 0
                     display: flex
                     justify-content: flex-end
                     margin-right: 5% 
@@ -98,6 +99,19 @@ body
                 font-size: 250%
                 text-transform: uppercase
                 font-weight: bold
+        .owl-nav
+            position: absolute
+            z-index: 3
+            width: 100%
+            top: 45%
+            display: flex
+            justify-content: space-between
+            button
+                border: none
+                background-color: transparent
+                color: $secondary-color
+                font-size: 400
+                font-weight: 600
     .page-heading
         margin: 3% 0%
         .container
@@ -112,11 +126,59 @@ body
         .container
             margin: 0% 2%
             .box-wrap
+                border: solid 1px
                 .learn-desining-banner
                     position: absolute
-                    top: 51% 
+                    top: 46% 
                     left: 4%
-                    
                     background-color: $terciary-color
                     color: $secondary-color
                     padding: 5% 18%
+            .box-body
+                margin-top: 10%
+                section
+                    margin: 0
+                    padding: 0
+                    p span
+                        font-weight: bold
+            .owl-nav
+                display: flex
+                justify-content: space-evenly
+                align-items: center
+                padding: 10px
+                margin-top: 30px
+                button
+                    border: 2px solid
+                    border-radius: 50%
+                    font-size: 40px
+                    width: 50px
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 92%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        height: 2px
+                        width: 3em
+                        background-color: darkslategray
+    .page-footer
+        background-color: black
+        color: $secondary-color
+        .footer-second-section
+            .container
+                display: flex
+                justify-content: center
+                hr
+                    width: 40%
+                .footer-line
+
+                .social-list
+                    position: absolute
+                    display: flex
+                    list-style: none
+                    padding: 0
+                    margin: 0
+                    padding-right: 10px
+                    li
+                        display: inline-flex
+                        margin-right: 5px

@@ -1,0 +1,2 @@
+insert into user (id,first_name,last_name,telefono,mail) values (1,'A','Joce Luis', 123123123, 'joceluis@salchicha.es')
+insert into user (id,first_name,last_name,telefono,mail) values (2,'A','Joce Luis 2', 123123124, 'joceluis2@salchicha.es')

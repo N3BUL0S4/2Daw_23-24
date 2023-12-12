@@ -1,0 +1,46 @@
+<!DOCTYPE Biblioteca SYSTEM "./biblioteca.dtd">
+<Biblioteca>
+    <Libros>
+        <Libro>
+            <ISBN>1254789</ISBN>
+            <titulo>Programación</titulo>
+            <editorial>RAMA</editorial>
+            <anoPublic>2014</anoPublic>
+            <autor>Antonio </autor>
+            <ejemplares>3</ejemplares>
+            <Prestado>
+                <prestamo>1</prestamo>
+                <socio>X78943256</socio>
+                <fecha>02/05/22</fecha>
+            </Prestado>
+        </Libro>
+        <Libro>
+            <ISBN>2135468</ISBN>
+            <titulo>Lenguaje de marcas</titulo>
+            <editorial>Edtex</editorial>
+            <anoPublic>2012</anoPublic>
+            <autor>Ivan Martinez</autor>
+            <ejemplares>1</ejemplares>
+        </Libro>
+        <Libro>
+            <ISBN>2135468</ISBN>
+            <titulo>Lenguaje de marcas</titulo>
+            <editorial>Edtex</editorial>
+            <anoPublic>2012</anoPublic>
+            <autor>Ivan Martinez</autor>
+            <ejemplares>2</ejemplares>
+        </Libro>
+    </Libros>
+    <Socios>
+        <Socio>
+            <DNI>X78943256</DNI>
+            <nombre>Luis </nombre>
+            <direccion>C Benito, 23 Murcia</direccion>
+            <email>luis@gmail.com</email>
+            <telefonos>
+                <telefono>654987321</telefono>
+                <telefono>658741239</telefono>
+            </telefonos>
+        </Socio>
+    </Socios>
+</Biblioteca>

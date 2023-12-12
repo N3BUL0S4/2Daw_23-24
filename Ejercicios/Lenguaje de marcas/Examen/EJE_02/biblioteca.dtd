@@ -1,0 +1,24 @@
+
+<!ELEMENT Biblioteca (Libros+,Socios+)>
+    <!ELEMENT Libros (Libro+)>
+        <!ELEMENT Libro (ISBN,titulo,editorial,anoPublic,autor,ejemplar,Prestado?)>
+        <!ELEMENT ISBN (#PCDATA)>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT editorial (#PCDATA)>
+        <!ELEMENT anoPublic (#PCDATA)>
+        <!ELEMENT autor (#PCDATA)>
+        <!ELEMENT ejemplar EMPTY>
+        <!ATTLIST ejemplar numero ID #REQUIRED>
+        <!ELEMENT Prestado (prestamo?,socio?,fecha?)>
+            <!ELEMENT prestamo (#PCDATA)>
+            <!ELEMENT socio (#PCDATA)>
+            <!ELEMENT fecha (#PCDATA)>
+
+    <!ELEMENT Socios (Socio+)>
+        <!ELEMENT Socio (DNI, nombre, direccion,email, telefonos?)>
+            <!ELEMENT DNI (#PCDATA)>
+            <!ELEMENT nombre (#PCDATA)>
+            <!ELEMENT direccion (#PCDATA)>
+            <!ELEMENT email (#PCDATA)>
+            <!ELEMENT telefonos (telefono*)>
+                <!ELEMENT telefono (#PCDATA)>
