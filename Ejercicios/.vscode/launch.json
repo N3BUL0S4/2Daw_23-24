@@ -9,6 +9,16 @@
             "projectName": "prueba",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PokemonApplication<pokemon>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.pokemon.PokemonApplication",
+            "projectName": "pokemon",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
