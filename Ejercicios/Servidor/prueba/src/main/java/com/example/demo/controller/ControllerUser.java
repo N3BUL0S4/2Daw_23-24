@@ -1,6 +1,6 @@
 package com.example.demo.controller;
-import java.util.HashMap;
 
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,8 +20,8 @@ import com.example.demo.Service.UserService;
 		private UserService userService;
 	
 		@GetMapping("/users")
-		private HashMap<Long, User> consultarUsuarios() {
-			return userService.consultarUsuarios();
+		private List<User> getAllUsers() {
+			return userService.getAllUsers();
 		}
 
 		@GetMapping("/user/{id}")

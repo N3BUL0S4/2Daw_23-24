@@ -1,44 +1,62 @@
 package com.example.demo.Service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
+
 import java.util.List;
 
-import org.springframework.stereotype.Service;
-import com.example.demo.repository.OrderRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.demo.mapper.UserMapper;
 import com.example.demo.repository.UserEntity;
+import com.example.demo.repository.UserRepository;
 import com.example.demo.user.User;
 
 
 
-@Service
+
+
+@org.springframework.stereotype.Service
 public class UserService {
-	private OrderRepository users;
+	
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	@Autowired 
+	private UserMapper userMapper;
 
-	public List<User> consultarUsuarios() {
-		List   <UserEntity> lstUserEntity= users.findAll();
-		lstUserEntity.stream().map();
+	public List<User> getAllUsers(){
+		
+		List<UserEntity> listUserEntity=userRepository.findAll();
+		return userMapper.userEntityToUserList(listUserEntity);
+		
 	}
-
-	public User consultarUsuario( final Long id) {
-		if (mapuser.get(id) != null) {
-			return (User) mapuser.get(id);
+	
+	
+	public User consultarUsuario(final Long id) {
+		
+		if (userRepository.existsById(id)) {
+			return userMapper.userEntityToUser(userRepository.findById(id).get());
 		}
 		return null;
-
+		
 	}
 
-	public void addUser( User user) {
-		mapuser.put(user.getId(), user);
+	
+	public void addUser(User user) {
+		
+		userRepository.save(userMapper.userToUserEntity(user));
+		
 	}
-
-	public void updateUser( User user) {
-		mapuser.put(user.getId(), user);
+	
+	public void updateUser(User user) {
+		addUser(user);
 	}
-
-	public void deleteUsers( final Long id) {
-		mapuser.remove(id);
+	
+	public void deleteUsers(final Long id) {
+		userRepository.deleteById(id);
 	}
-
+	
+	
+	
+	
 }
