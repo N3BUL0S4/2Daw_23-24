@@ -1,0 +1,30 @@
+
+#fuera {
+    width: 700px ; 
+    height: 500px;    
+    border: 2px solid #000; 
+}
+#dentro{
+    margin: 100px;
+    width: 500px ; 
+    height: 300px;  
+    border: 2px solid #000; 
+}
+.blaco {
+    background-color: white;
+}
+.naranja {
+    background-color: orange;
+}
+.rojo{
+    background-color: red;
+}
+.azul{
+    background-color: blue;
+}
+.verde{
+    background-color: green;
+}
+.amarillo{
+    background-color: yellow;
+}

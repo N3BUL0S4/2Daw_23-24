@@ -1,0 +1,12 @@
+body {
+    width: 3000px;
+    height: 3000px;
+}
+
+.card {
+    padding: 30px;
+    width: 270px;
+    height: 170px;
+    position: fixed;
+    background-color: rgb(206, 206, 206);
+}

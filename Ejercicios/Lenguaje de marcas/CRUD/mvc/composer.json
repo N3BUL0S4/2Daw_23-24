@@ -1,0 +1,15 @@
+{
+    "name": "fran/mvc",
+    "autoload": {
+        "psr-4": {
+            "Fran\\Mvc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fran Huertas",
+            "email": "profesor.franhuetas@gmail.com"
+        }
+    ],
+    "require": {}
+}
