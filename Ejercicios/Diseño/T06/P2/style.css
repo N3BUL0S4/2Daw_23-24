@@ -1,9 +1,16 @@
-
 #fuera {
+    width: 900px ; 
+    height: 700px;    
+    border: 2px solid #000; 
+}
+
+#medio {
+    margin: 100px ;
     width: 700px ; 
     height: 500px;    
     border: 2px solid #000; 
 }
+
 #dentro{
     margin: 100px;
     width: 500px ; 

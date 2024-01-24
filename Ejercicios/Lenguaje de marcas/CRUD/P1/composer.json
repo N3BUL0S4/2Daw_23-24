@@ -1,0 +1,14 @@
+{
+    "name": "daw/p1",
+    "autoload": {
+        "psr-4": {
+            "Daw\\P1\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "daw"
+        }
+    ],
+    "require": {}
+}

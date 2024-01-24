@@ -1,5 +1,5 @@
 <?php
-namespace Fran\Mvc\lib;
+namespace Daw\P1\lib;
 
 
 class Model{
@@ -12,6 +12,4 @@ class Model{
     }
     
 }
-
-
 ?>

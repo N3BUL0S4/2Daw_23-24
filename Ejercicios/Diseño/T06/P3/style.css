@@ -1,0 +1,18 @@
+/* Las classes */
+.left {
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+}
+.container{
+    max-height: 4cm;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.hidden {
+    visibility: hidden;
+}
