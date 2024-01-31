@@ -10,27 +10,27 @@
     <div class="body">
         <h2 class="card-title">Formulario de registro</h2>
         <label>Usuario: </label> 
-        <input class="text" type="text" name="user" id="user"> <br/> <br/>
+        <input class="text" type="text" name="user" id="user" placeholder="Introduzca el nombre de usuario"> <br/> <br/>
         <label>Contraseña: </label>
-        <input class="text" type="password" name="passwd" id="passwd"> <br/> <br/>
+        <input class="text" type="password" name="passwd" id="passwd" placeholder="Introduzca la contraseña"> <br/> <br/>
         <label>Edad: </label>
-        <input class="text" type="number" name="age" id="age"> <br/><br/>
+        <input class="text" type="number" name="age" id="age" placeholder="introduzca la edad"> <br/><br/>
         <label>Email: </label>
-        <input class="text" type="email" name="email" id="email"> <br/><br/>
+        <input class="text" type="email" name="email" id="email" placeholder="correo@dominio"> <br/><br/>
         <label>Telefono: </label>
-        <input class="text" type="tel" name="phone" id="phone"> <br/><br/>
+        <input class="text" type="tel" name="phone" id="phone" placeholder="Introduzca su numero de telefono"> <br/><br/>
         <div>
             <label>¿Como nos has conocido?</label>
-            <input type="radio" name="internet" id="internet">
+            <input type="radio" name="conocido" id="internet">
             <label>Internet</label>
-            <input type="radio" name="famAm" id="famAm">
+            <input type="radio" name="conocido" id="famAmg">
             <label>Familiar o Amigo</label>
-            <input type="radio" name="publicity" id="publicity">
+            <input type="radio" name="conocido" id="publicity" checked >
             <label>Publicidad</label>
         </div><br/>
         <div>
             <label>¿Que idiomas hablas?</label>
-            <input type="checkbox" name="esp" id="esp">
+            <input type="checkbox" name="esp" id="esp" checked>
             <label>Español</label>
             <input type="checkbox" name="ing" id="ing">
             <label>Ingles</label>
@@ -98,5 +98,6 @@
         <button id="register">Registrar Usuario</button>
         <button id="delete">Borrar datos</button>
     </div>
+    <script src="eje.js"></script>
 </body>
 </html>

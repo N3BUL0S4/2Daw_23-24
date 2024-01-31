@@ -13,3 +13,6 @@ h2 {
 .text {
       align-items: self-en;
 }
+.error{
+    border-color: red;
+}

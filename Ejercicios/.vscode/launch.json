@@ -39,6 +39,26 @@
             "projectName": "pokemon",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ExamenApplication<examen (2)>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.demo.ExamenApplication",
+            "projectName": "examen (2)",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-PokemnobdApplication<pokemnobd>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.pokemnobd.PokemnobdApplication",
+            "projectName": "pokemnobd",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
