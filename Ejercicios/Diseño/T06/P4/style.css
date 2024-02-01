@@ -7,6 +7,10 @@
     width: 400px;
     
 }
+
+:focus {
+    border-color: yellow;
+}
 h2 {
     text-align: center;
 }

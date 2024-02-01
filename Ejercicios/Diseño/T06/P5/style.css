@@ -1,0 +1,15 @@
+loading{
+       
+    animation: loading 0ms -800ms linear infinite 
+}
+
+@keyframes loading {
+    0% {
+      height: 8px;
+    }
+  
+    100% {
+      height: 50px;
+    }
+  }
+  

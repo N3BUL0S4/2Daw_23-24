@@ -23,10 +23,7 @@ function passwd(){
 function email() {
     email=document.querySelector("#email").value
     ok=false
-    if(email.includes("@")){
-        ok=true
-    }
-    if(email.includes(".")){
+    if(email.includes("@") && email.includes(".")){
         ok=true
     }
     console.log(ok)
