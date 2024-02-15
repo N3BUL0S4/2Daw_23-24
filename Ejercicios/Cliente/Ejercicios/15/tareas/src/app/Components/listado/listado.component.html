@@ -1,0 +1,10 @@
+<div class="row row-cols-1 row-cols-sm-2 g-3">
+    <div class="col" *ngFor="let s of service.arrTodo">
+      <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Tarea: {{s.tarea}}</h5>
+            <p class="card-text">Limite: {{s.limite}}</p>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="container">
+    <h1>Crear Tarea</h1>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingInput" placeholder="Tarea" #tarea>
+        <label for="floatingInput">Tarea</label>
+    </div>
+    <div class="form-floating">
+        <input type="text" class="form-control" id="floatingPassword" placeholder="Limite" #limite>
+        <label for="floatingPassword">Limite</label>
+    </div>
+    <button id="boton" type="button" class="btn btn-success mt-2" (click)="insertar(tarea,limite)">Success</button>
+</div>

@@ -1,15 +1,32 @@
-loading{
-       
-    animation: loading 0ms -800ms linear infinite 
+.container{
+  margin:20%;
+  margin-left: 35%;
+}
+.container div{
+  display: inline-block;
+  padding: 10px;
+  background-color: aqua;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  animation: loading;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
 }
 
+#b {
+  animation-delay: 1s;
+}
+
+
 @keyframes loading {
-    0% {
-      height: 8px;
-    }
-  
-    100% {
-      height: 50px;
-    }
+  0% {
+    height: 50px;
   }
+  100% {
+    height: 200px;
+  }
+}
   

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="6.xsl"?>
+<concesionario>
+    <coche numBastidor="C1512344">
+        <marca>SEAT</marca>
+        <modelo>Leon</modelo>
+        <matricula>1234BBB</matricula>
+        <potencia>130</potencia>
+        <plazas>5</plazas>
+        <numPuertas>5</numPuertas>
+    </coche>
+    <coche numBastidor="C6512344">
+        <marca>BMW</marca>
+        <modelo>Serie 1</modelo>
+        <matricula>5678CCC</matricula>
+        <potencia>150</potencia>
+        <plazas>4</plazas>
+        <numPuertas>3</numPuertas>
+    </coche>
+    <coche numBastidor="C1510044">
+        <marca>CHEVROLET</marca>
+        <modelo>Corvette</modelo>
+        <matricula>5063BSB</matricula>s
+        <potencia>330</potencia>
+        <plazas>2</plazas>
+        <numPuertas>3</numPuertas>
+    </coche>
+    <coche numBastidor="C7766554">
+        <marca>Peugeot</marca>
+        <modelo>406</modelo>
+        <matricula>5678CDC</matricula>
+        <potencia>90</potencia>
+        <plazas>5</plazas>
+        <numPuertas>4</numPuertas>
+    </coche>
+</concesionario>

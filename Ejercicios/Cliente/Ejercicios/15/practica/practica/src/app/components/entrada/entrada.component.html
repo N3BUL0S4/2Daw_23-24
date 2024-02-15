@@ -1,0 +1,16 @@
+<div class="container">
+
+    <h1>Datos Entrada</h1>
+
+    <label>Nombre</label>
+    <input type="text" name="name" id="name" #name class="form-control">
+    <label>DNI</label>
+    <input type="text" name="dni" id="dni" #dni class="form-control">
+    <label>Fecha vacuna</label>
+    <input type="text" name="fvacuna" id="fvacuna" #fsintomas class="form-control">
+    <label>Fecha sintomas</label>
+    <input type="text" name="fsintomas" id="fsintomas" #fsintomas class="form-control">
+    <label>sintomas</label>
+    <textarea type="text" name="sintomas" id="sintomas" #sintomas class="form-control"></textarea>
+    <button id="boton" (click)="inserta(name,dni,fvacuna,fsintomas)">Insertar</button>
+</div>

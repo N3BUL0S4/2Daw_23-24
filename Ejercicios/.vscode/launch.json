@@ -59,6 +59,16 @@
             "projectName": "pokemnobd",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ExamFinalApplication<exam-final>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "es.riberamolinos.examfinal.ExamFinalApplication",
+            "projectName": "exam-final",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="9.xsl"?>
+<comunidad>
+    <vecino codVecino="1" cargo="presidente">
+        <nombre>Juan</nombre>
+        <apellidos>
+            <apellido1>Iborra</apellido1>
+            <apellido2>Suárez</apellido2>
+        </apellidos>
+        <datosVivienda>
+            <portal>1</portal>
+            <piso>3</piso>
+            <letra>C</letra>
+        </datosVivienda>
+        <CCC>2234-5123-45-5432134251</CCC>
+    </vecino>
+    <vecino codVecino="2" cargo="vicepresidente">
+        <nombre>Ana</nombre>
+        <apellidos>
+            <apellido1>Cangas</apellido1>
+        </apellidos>
+        <datosVivienda>
+            <portal>1</portal>
+            <piso>6</piso>
+        </datosVivienda>
+        <CCC>1122-1123-45-5432134251</CCC>
+    </vecino>
+    <vecino codVecino="3">
+        <nombre>Sonia</nombre>
+        <apellidos>
+            <apellido1>Sánchez</apellido1>
+            <apellido2>Sánchez</apellido2>
+        </apellidos>
+        <datosVivienda>
+            <portal>3</portal>
+            <piso>2</piso>
+            <letra>D</letra>
+        </datosVivienda>
+        <CCC>5555-5123-45-5432134251</CCC>
+    </vecino>
+    <vecino codVecino="4">
+        <nombre>Saturnino</nombre>
+        <apellidos>
+            <apellido1>Aldera</apellido1>
+            <apellido2>Sos</apellido2>
+        </apellidos>
+        <datosVivienda>
+            <portal>5</portal>
+            <piso>2</piso>
+            <letra>A</letra>
+        </datosVivienda>
+        <CCC>7777-7123-45-5432134251</CCC>
+    </vecino>
+    <vecino codVecino="5" cargo="vocal">
+        <nombre>Andrea</nombre>
+        <apellidos>
+            <apellido1>Dercos</apellido1>
+            <apellido2>Coslada</apellido2>
+        </apellidos>
+        <datosVivienda>
+            <portal>1</portal>
+            <piso>2</piso>
+            <letra>B</letra>
+        </datosVivienda>
+        <CCC>3333-3123-45-5432134251</CCC>
+    </vecino>
+</comunidad>

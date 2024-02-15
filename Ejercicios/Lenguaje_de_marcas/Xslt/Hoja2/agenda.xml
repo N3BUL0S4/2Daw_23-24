@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="4.xsl"?>
+<agenda>
+    <ficha categoria="agente_comercial" zona="La Flota">
+        <nombre>Juan Domingo</nombre>
+        <apellido1>Salcedo</apellido1>
+        <apellido2>Romera</apellido2>
+        <email>juan-ds_r@gmail.com</email>
+        <email>jdomingo@hotmail.com</email>
+        <direccion>
+            <calle>C/Luna, 23</calle>
+            <piso>Bajo</piso>
+            <letra>A</letra>
+            <codigo_postal>3014</codigo_postal>
+            <ciudad>Murcia</ciudad>
+            <pais>España</pais>
+        </direccion>
+        <foto>jdsr.jpg</foto>
+        <web>http://www.riberamolinos.es</web>
+    </ficha>
+    <ficha categoria="empresa" zona="Ronda Norte">
+        <nombre>Luis</nombre>
+        <apellido1>Sandrín</apellido1>
+        <apellido2>Cali</apellido2>
+        <foto>lsc.jpg</foto>
+        <web>https://www.google.es</web>
+    </ficha>
+    <ficha categoria="particular" zona="Infante">
+        <nombre>Julian</nombre>
+        <apellido1>Suárez</apellido1>
+        <apellido2>Adoloque</apellido2>
+        <foto>jsa.jpg</foto>
+        <web>http://informatica.riberamolinos.es</web>
+    </ficha>
+</agenda>

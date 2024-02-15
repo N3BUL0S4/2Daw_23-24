@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="audio.css">
+</head>
+<body>
+    <div class="audios-panel">
+        <div>
+            <p class="nombre">Audio 1</p>
+            <p>Descripción del audio1</p>
+            <div class="controles">
+                <audio id="audio1" src="audios/audio_1.mp3"></audio>
+                <button onclick="rebobinar('audio1', 10)"><img src="iconos/rebobinar.png" alt="retroceder"></button>
+                <button onclick="play('audio1')"><img src="iconos/play.png" alt="play"></button>
+                <button onclick="stop('audio1')"><img src="iconos/pausa.png" alt="stop"></button>
+                <button onclick="avanzar('audio1', 7)"><img src="iconos/avanzar.png" alt="avanzar"></button>
+            </div>
+        </div>
+        <div>
+            <p class="nombre">Audio 2</p>
+            <p>Descripción del audio2</p>        
+            <div class="controles">
+                <audio id="audio2" src="audios/audio_2.mp3"></audio>
+                <button onclick="rebobinar('audio2', 10)"><img src="iconos/rebobinar.png" alt="retroceder"></button>
+                <button onclick="play('audio2')"><img src="iconos/play.png" alt="play"></button>
+                <button onclick="stop('audio2')"><img src="iconos/pausa.png" alt="stop"></button>
+                <button onclick="avanzar('audio2', 7)"><img src="iconos/avanzar.png" alt="avanzar"></button>
+            </div>
+        </div>
+        <div>
+            <p class="nombre">Audio 3</p>
+            <p>Descripción del audio3</p>        
+            <div class="controles">
+                <audio id="audio3" src="audios/audio_3.mp3"></audio>
+                <button onclick="rebobinar('audio3', 10)"><img src="iconos/rebobinar.png" alt="retroceder"></button>
+                <button onclick="play('audio3')"><img src="iconos/play.png" alt="play"></button>
+                <button onclick="stop('audio3')"><img src="iconos/pausa.png" alt="stop"></button>
+                <button onclick="avanzar('audio3', 7)"><img src="iconos/avanzar.png" alt="avanzar"></button>
+            </div>
+        </div>
+        <div>
+            <p class="nombre">Audio 4</p>
+            <p>Descripción del audio4</p>
+            <div class="controles">
+                <audio id="audio4" src="audios/audio_4.mp3"></audio>
+                <button onclick="rebobinar('audio4', 10)"><img src="iconos/rebobinar.png" alt="retroceder"></button>
+                <button onclick="play('audio4')"><img src="iconos/play.png" alt="play"></button>
+                <button onclick="stop('audio4')"><img src="iconos/pausa.png" alt="stop"></button>
+                <button onclick="avanzar('audio4', 7)"><img src="iconos/avanzar.png" alt="avanzar"></button>
+            </div>
+        </div>
+    </div>
+    <script src="audio.js"></script>
+</body>
+</html>

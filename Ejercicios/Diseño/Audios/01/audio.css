@@ -1,0 +1,33 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 50PX;
+    padding: 0;
+}
+
+.audios-panel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 600px;
+    margin: auto;
+    justify-content:  center; 
+}
+
+.audios-panel div {
+    width: 300px;
+    margin: 10px;
+
+}
+
+button img {
+    width: 46px;
+}
+
+.nombre {
+    color: red;
+    font-weight: bolder;
+}
+
+.copntroles {
+    display: flex;
+    justify-content: center;
+}
