@@ -1,7 +1,9 @@
+/* Ajustamos el contenedor al centro */
 .container{
   margin:20%;
   margin-left: 35%;
 }
+/* Ponemos los etilos comunes para todos los contenedores para que se aga todo igual */
 .container div{
   display: inline-block;
   padding: 10px;
@@ -15,12 +17,11 @@
   animation-direction: alternate;
 
 }
-
+/* ajustamos el delay de los contenedores impares y se intercalen */
 #b {
   animation-delay: 1s;
 }
-
-
+/* creamos la animacion que se va a ejecutar */
 @keyframes loading {
   0% {
     height: 50px;
