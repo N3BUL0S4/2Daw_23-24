@@ -1,0 +1,67 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="incidencia_list">
+      <field name="name">Lista de incidencias</field>
+      <field name="model">modulo_Ruben.incidencia</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="descripcion"/>
+          <field name="procesador"/>
+          <field name="ram"/>
+          <field name="capacidadDisc"/>
+          <field name="tipoDisco"/>
+          <field name="fechaC"/>
+          <field name="precioC"/>
+          <field name="nserie"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="ubicacion_list">
+      <field name="name">Lista de ubicacion</field>
+      <field name="model">modulo_Ruben.ubicacion</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre"/>
+          <field name="pabellon"/>
+          <field name="planta"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="incidencia_action_window">
+      <field name="name">Lista de incidencias</field>
+      <field name="res_model">modulo_Ruben.incidencia</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="ubicacion_action_window">
+      <field name="name">Lista de ubicaciones</field>
+      <field name="res_model">modulo_Ruben.ubicacion</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+    <!-- Top menu item -->
+
+    <menuitem name="modulo_RubenDAW" id="modulo_Ruben.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Incidencias" id="modulo_Ruben_incidencias" parent="modulo_Ruben.menu_root"/>
+    <menuitem name="Ubicaciones" id="modulo_Ruben_ubicacion" parent="modulo_Ruben.menu_root"/>
+    <!-- actions -->
+    
+    <menuitem name="Mostrar lista" id="modulo_Ruben_incidencias_list" parent="modulo_Ruben_incidencias"
+    action="incidencia_action_window"/>
+    <menuitem name="Mostrar lista" id="modulo_Ruben_ubicacion_list" parent="modulo_Ruben_ubicacion"
+    action="ubicacion_action_window"/>
+
+  </data>
+</odoo>

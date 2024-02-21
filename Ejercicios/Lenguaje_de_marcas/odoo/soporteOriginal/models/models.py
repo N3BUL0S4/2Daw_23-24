@@ -25,6 +25,9 @@ class incidencia(models.Model):
         comodel_name="soporte.ubicacion",
         ondelete="restrict"
     )
+    
+    tecnico_id=fields.Many2many('soporte.tecnico')
+    
 class ubicacion(models.Model):
     _name = "soporte.ubicacion"
     _descripcion = "Modelo de datos para ubicaciones"
@@ -40,11 +43,26 @@ class ubicacion(models.Model):
     )
 
     planta=fields.Selection(
-        string="Pabellon",
+        string="planta",
         selection=[('1','Planta 1'),('2','Planta 2'),('3','Planta 3'),('4','Planta 4'),]
     )
-    
+    incidencias_ids=fields.One2many('soporte.ubicacion','ubicacion_id')
 
+class tecnico(models.Model):
+    _name = "soporte.tecnico"
+    _descipcion = "Modelo de datos para tecnicos que dan asistencia"
+
+    nombre=fields.Char(
+        string='name',
+        required=True
+    )
+    
+    categoria=fields.Char(
+        string='Categoria',
+        required=True
+    )
+
+    incidencias_ids=fields.One2many('soporte.incidencia','tecnico_id')
 #     value = fields.Integer()
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()

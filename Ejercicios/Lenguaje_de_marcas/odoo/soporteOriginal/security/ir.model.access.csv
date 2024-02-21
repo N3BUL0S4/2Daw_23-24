@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 soporte_incidencia_acl,soporte_incidencia,model_soporte_incidencia,base.group_user,1,1,1,1
 soporte_ubicacion_acl,soporte_ubicacion,model_soporte_ubicacion,base.group_user,1,1,1,1
+soporte_tecnico_acl,soporte_tecnico,model_soporte_tecnico,base.group_user,1,1,1,1

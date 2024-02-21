@@ -27,6 +27,18 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="soporte_list">
+      <field name="name">Lista de Tecnicos</field>
+      <field name="model">soporte.tecnico</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre"/>
+          <field name="pabellon"/>
+          <field name="planta"/>
+        </tree>
+      </field>
+    </record>
+
     <!-- actions opening views on models -->
 
     <record model="ir.actions.act_window" id="incidencia_action_window">
@@ -40,6 +52,11 @@
       <field name="res_model">soporte.ubicacion</field>
       <field name="view_mode">tree,form</field>
     </record>
+    <record model="ir.actions.act_window" id="tecnico_action_window">
+      <field name="name">Lista de tecnicos</field>
+      <field name="res_model">soporte.tecnico</field>
+      <field name="view_mode">tree,form</field>
+    </record>
 
 
 
@@ -50,12 +67,15 @@
     <!-- menu categories -->
 
     <menuitem name="Incidencias" id="soporte_incidencias" parent="soporte.menu_root"/>
-    <menuitem name="Incidencias" id="soporte_ubicacions" parent="soporte.menu_root"/>
+    <menuitem name="Ubicaciones" id="soporte_ubicacions" parent="soporte.menu_root"/>
+    <menuitem name="Tecnicos" id="soporte_tecnico" parent="soporte.menu_root"/>
     <!-- actions -->
     
     <menuitem name="Mostrar lista" id="soporte_incidencias_list" parent="soporte_incidencias"
     action="incidencia_action_window"/>
     <menuitem name="Mostrar lista" id="soporte_ubicacion_list" parent="soporte_ubicacion"
+    action="ubicacion_action_window"/>
+    <menuitem name="Mostrar lista" id="soporte_tecnico_list" parent="soporte_tecnico"
     action="ubicacion_action_window"/>
 
   </data>

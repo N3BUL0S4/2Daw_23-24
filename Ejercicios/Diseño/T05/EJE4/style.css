@@ -1,0 +1,5 @@
+/* He tenido que hacer una clase css aparte para poder hacer cuando pases por en ciama cambie */
+#botones button:hover {
+    background-color: black; /* Cambia el color de fondo al pasar el cursor */
+    color: white; /* Cambia el color del texto al pasar el cursor */
+  }

@@ -1,20 +1,13 @@
 from articulo import Articulo
-from db import DB
 from service import service
 
 def case1():
-    
-    nombre=input("Introduce el nombre: ")
-    if "S"==input("Es vegano Si(s) No(n): ").upper():
-        vegan=True
-    else:
-        vegan=False
-    stock=int(input("Introduce el stock: "))
-    iva=int(input("Introduce el iva: "))
-    precio=int(input("Introduce el precio: "))
-    ivaAux=0
-    iavAux=(precio*iva)/100
-    service.newArticulo(nombre,vegan,stock,ivaAux,precio)
+    nombre = input("Indique nombre: ")
+    vegan = bool (input("¿Es producto vegano?"))
+    stock = int(input("Indique cantidad: "))
+    iva = int(input("Indique iva: "))
+    precio = float(input("Indique precio: "))
+    service.newArticulo(nombre, vegan, stock, iva, precio)
 
         
 def case2():
@@ -30,36 +23,37 @@ def case4():
     print(service.findArtSinStock())
    
 def case5():
-    carrito:Articulo=[]
-    elec=1
-    while elec!=0:
-        if (elec==1):
-            id=input("Id del producto: ")
-            cantida=input("Cantidad: ")
-            if carrito!=None:
-                for a in carrito:
-                    if id==a.id:
-                        print("Ya existe este articulo")
-                        break;
-            arti=service.findArticuloById(id)
-            if arti.stock<cantida:
-                print("Cantidad insuficiente de Stock Quedan {}".format(arti.nombre))
-                break;
-            arti.stock=cantida
-            carrito.add(arti);
-            elec=int(input("quires añadir otro articulo? Si(1) NO,pagar(0)"))
-    total=0
-    totaliva=0
-    for a in carrito:
-        total=a.precio
-        totaliva=a.iva
-        print(a)
-    print("Total: {}".format(total))
-    print("Total con IVA: {}".format(total+totaliva))
-    acepta=int(input("Aceptar: Si(1) No(0)"))
-    if acepta == 1:
-        for a in carrito:
-            service.newStock(a.id,(a.stock)*-1)    
+    print("mogolico")
+    # carrito:Articulo=[]
+    # elec=1
+    # while elec!=0:
+    #     if (elec==1):
+    #         id=input("Id del producto: ")
+    #         cantida=input("Cantidad: ")
+    #         if carrito!=None:
+    #             for a in carrito:
+    #                 if id==a.id:
+    #                     print("Ya existe este articulo")
+    #                     break;
+    #         arti=service.findArticuloById(id)
+    #         if arti.stock<cantida:
+    #             print("Cantidad insuficiente de Stock Quedan {}".format(arti.nombre))
+    #             break;
+    #         arti.stock=cantida
+    #         carrito.add(arti);
+    #         elec=int(input("quires añadir otro articulo? Si(1) NO,pagar(0)"))
+    # total=0
+    # totaliva=0
+    # for a in carrito:
+    #     total=a.precio
+    #     totaliva=a.iva
+    #     print(a)
+    # print("Total: {}".format(total))
+    # print("Total con IVA: {}".format(total+totaliva))
+    # acepta=int(input("Aceptar: Si(1) No(0)"))
+    # if acepta == 1:
+    #     for a in carrito:
+    #         service.newStock(a.id,(a.stock)*-1)    
             
             
 def menu():

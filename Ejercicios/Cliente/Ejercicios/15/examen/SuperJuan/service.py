@@ -4,9 +4,10 @@ class service:
     def __init__(self,db):
         self.repository = repository(db)
     
-    def newArticulo(self,nombre,vegan,stock,iva,precio):
-        repository.newArticulo(nombre,vegan,stock,iva,precio)
-        print("Nuevo articulo creado")
+  
+    def newArticulo(self, nombre, vegan, stock, iva, precio):
+        self.repository.newArticulo(nombre, vegan, stock, iva, precio)
+        print("Nuevo articulo introducido!!")
         
     def newStock(self,id,stock):
         repository.newStock(stock,id)

@@ -10,11 +10,11 @@ class repository:
     
     def ejecutar(self, query, params) :
         self.db.cursor.execute(query,params)
-        self.db.cursor.commit()
+        self.db.cnx.commit()
     
-    def newArticulo(self,nombre,vegan,stock,iva,precio):
-        sql="INSERT INTO supermercado (NOMBRE,VEGAN,STOCK,IVA,PRECIO) VALUES (%s,%s,%s,%s,%s)"
-        selfejecutar(sql,(nombre,vegan,stock,iva,precio))
+    def newArticulo(self, nombre, vegan, stock, iva, precio):
+        sql = "INSERT INTO articulo (nombre, vegan, stock, iva, precio) VALUES (%s, %s, %s, %s, %s)"
+        self.ejecutar(sql, (nombre, vegan, stock, iva, precio))
         
     def newStock(self,id,stock):
         sql="UPDATE supermercado SET STOCK=%s WHERE ID=%s"
