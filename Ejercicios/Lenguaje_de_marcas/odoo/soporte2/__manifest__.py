@@ -3,14 +3,15 @@
     'name': "soporte",
 
     'summary': """
-        Modulo para la gestion de incidencias de RM1""",
+        Módulo para la gestión de incidencias de RMI""",
 
     'description': """
-        Este modulo lo hemso desarrollado en LM de DAW 
+        Este módulo lo hemos desarrollado en LM de DAW del 
+        IES RIBERA DE LOS MOLINOS
     """,
 
-    'author': "Ruben",
-    'website': "https://www.yourcompany.com",
+    'author': "Ruben Sanchez",
+    'website': "https://www.riberamolinos.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/16.0/odoo/addons/base/data/ir_module_category_data.xml
@@ -23,7 +24,7 @@
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
     ],

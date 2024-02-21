@@ -1,0 +1,18 @@
+--Se define una clase db donde se define la conexion a bbdd, se realiza en clase main de la applicación.
+--Dicha conexión sera usada en el repositorio donde se encuentran las operaciones sql sobre la tabla
+--Service(Anteriormente llamada funciones.py) se encarga de llamar al repositorio.
+--Se trata de definir una arquitectura main - servicio - repositorio
+
+--Se crea la tabla persona en una base de datos llamada servidor
+
+CREATE TABLE `persona` (
+  `ID` int(255) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `NOMBRE` varchar(255) NOT NULL,
+  `APELLIDOS` varchar(255) NOT NULL,
+  `TELEFONO` varchar(255) NOT NULL,
+  `DIRECCION` varchar(255) NOT NULL
+);
+
+INSERT INTO `persona` (`NOMBRE`, `APELLIDOS`, `TELEFONO`, `DIRECCION`) VALUES
+('roger', 'federer', '6665556666', 'Plaza europa 2'),
+('stan', 'wawrinka', '555666555', 'Calle mayor 1');

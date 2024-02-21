@@ -1,0 +1,17 @@
+<div class="container">
+    <form #FormVino="ngForm" (ngSubmit)="procesa(FormVino)">
+        <label for="nombre" class="form-label">nombre</label>
+        <input type="text" name="nombre" id="nombre" class="form-control" required ngModel #nombre="ngModel">
+        <div [hidden]="nombre.valid || nombre.pristine" class="alert alert-danger">
+            El nombre es obligatorio
+        </div>
+
+        <label for="pvp" class="form-label">pvp</label>
+        <input type="text" name="pvp" id="pvp" class="form-control" required ngModel #pvp="ngModel">
+        <div [hidden]="pvp.valid || pvp.pristine" class="alert alert-danger">
+            El pvp es obligatorio
+        </div>
+
+        <button class="btn btn-success mt-4" type="submit" [disabled]="!FormVino.form.valid"></button>
+    </form>
+</div>
