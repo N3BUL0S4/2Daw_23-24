@@ -1,0 +1,65 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="modulo_list">
+      <field name="name">Lista de incidencias</field>
+      <field name="model">modulo.incidencia</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="descripcion"/>
+          <field name="procesador"/>
+          <field name="memoriaRAM"/>
+          <field name="discoduro"/>
+          <field name="fechaCompra"/>
+          <field name="precioCompra"/>
+          <field name="numeroSerie"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="modulo_list">
+      <field name="name">Lista de Ubicacion</field>
+      <field name="model">modulo.ubicacion</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre"/>
+          <field name="pabellon"/>
+          <field name="planta"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="incidencia_action_window">
+      <field name="name">Lista de incidencias</field>
+      <field name="res_model">modulo.incidencia</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="ubicacion_action_window">
+      <field name="name">Lista de ubicaciones</field>
+      <field name="res_model">modulo.ubicacion</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+    <!-- Top menu item -->
+
+    <menuitem name="moduloDAW" id="modulo.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Incidencias" id="modulo_incidencias" parent="modulo.menu_root"/>
+    <menuitem name="Incidencias" id="modulo_ubicacions" parent="modulo.menu_root"/>
+    <!-- actions -->
+    
+    <menuitem name="Mostrar lista" id="modulo_incidencias_list" parent="modulo_incidencias"
+    action="incidencia_action_window"/>
+    <menuitem name="Mostrar lista" id="modulo_ubicacion_list" parent="modulo_ubicacions"
+    action="ubicacion_action_window"/>
+
+  </data>
+</odoo>
