@@ -1,0 +1,8 @@
+<div class="container">
+<h1>Ingrese Presupuesto</h1>
+    <form  (ngSubmit)="enviar(Formulario)" #Formulario="ngForm">
+        <input type="number" class="form-control" name="presupuesto" id="presupuesto" minlength="1" required ngModel #presupuesto="ngModel">
+        <div [hidden]="presupuesto.valid || presupuesto.pristine" class="alert alert-danger">Tiene que ser mayor a 1</div>
+        <button [hidden]="!Formulario.form.valid" type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>

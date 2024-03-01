@@ -1,0 +1,12 @@
+<div class="contenedor">
+  <div *ngFor="let d of service.datos">
+    {{d.id}}.-{{d.name}}
+    <br>
+    Email: {{d.email}}
+    <br>
+    Genero: {{d.gender}}
+    <br>
+    Status: {{d.status}}
+  </div>
+</div>
+<router-outlet></router-outlet>

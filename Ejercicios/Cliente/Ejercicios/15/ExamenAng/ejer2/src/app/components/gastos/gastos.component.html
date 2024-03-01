@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="nuevoGasto">
+        <h1>Agregar Gasto</h1>
+        <hr>
+        <form (ngSubmit)="agregarGasto(Formulario)" #Formulario="ngForm">
+            <label for="">Gasto: </label>
+            <input type="text" name="gasto" id="gasto" ngModel #gasto="ngModel" >
+            <br>
+            <label for="">Cantidad: </label>
+            <input type="number" name="cantidad" id="cantidad" ngModel required minlength="1"  #cantidad="ngModel" >
+            <div [hidden]="cantidad.valid || cantidad.pristine" class="alert alert-danger">La cantidad no puede ser mayor al restante</div>
+            <br>
+            <button type="submit" [hidden]="!Formulario.form.valid">Agregar Gasto</button>
+        </form>
+    </div>
+    <div class="listaGasto">
+        <h1>Listado de Gastos</h1>
+        <hr>
+        <p>Presupuesto: {{service.presupuesto}}</p>
+        <p>Restante: {{service.restante}}</p>
+        <table>
+            <tr *ngFor="let a of service.gastos">
+                <td>
+                    {{a.gasto}}
+                </td>
+                <td>
+                    {{a.cantidad}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

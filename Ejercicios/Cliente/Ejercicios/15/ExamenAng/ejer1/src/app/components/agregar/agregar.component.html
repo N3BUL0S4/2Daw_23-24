@@ -1,0 +1,20 @@
+
+<div class="container">
+    <h1>Agregar Empleados</h1>
+    <form (ngSubmit)="agregar(formulario)" #formulario="ngForm" class="form-control">
+        <label for="Nombre">Nombre: </label>
+        <input type="text" class="form-control" name="nombre" id="nombre" required ngModel #nombre="ngModel">
+        <br>
+        <label for="Apellidos">Apellidos: </label>
+        <input type="text" class="form-control" name="apellidos" id="apellidos" required ngModel #apellidos="ngModel">
+        <br>
+        <label for="Documento">Documento: </label>
+        <input type="text" class="form-control" name="documento" id="documento" required ngModel #documento="ngModel">
+        <br>
+        <label for="Salario">Salario: </label>
+        <input type="text" class="form-control" name="salario" id="salario" required minlength="1" ngModel #salario="ngModel">
+        <br>
+        <button id="volver" (click)="volver()" class="btn btn-dark">volver</button>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
