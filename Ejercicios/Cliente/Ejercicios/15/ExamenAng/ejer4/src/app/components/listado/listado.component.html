@@ -1,0 +1,36 @@
+<div class="container">
+    <h1>Listado de Empleados</h1>
+    <button id="agregar" (click)="agregar()" class="btn btn-dark">Agregar</button>
+    <table class="table">
+        <thead>
+            <td>
+                Nombre
+            </td>
+            <td>
+                Apellido
+            </td>
+            <td>
+                Documento
+            </td>
+            <td>
+                Salario
+            </td>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of service.empleados">
+                <td>
+                    {{a.nombre}}
+                </td>
+                <td>
+                    {{a.apellidos}}
+                </td>
+                <td>
+                    {{a.documento}}
+                </td>
+                <td>
+                    {{a.salario}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
