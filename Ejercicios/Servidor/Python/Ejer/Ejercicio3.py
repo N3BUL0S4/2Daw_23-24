@@ -3,7 +3,7 @@ import random
 pP1=0
 pP2=0
 
-while (pP1<4 and pP2<4) and (pP1<=pP2+2 or pP2>=pP1+2):
+while (pP1<4 and pP2<4) and (pP1>=pP2+2 or pP2>=pP1+2):
     punto=random.randint(1,2)
     if 1==int(punto):
         pP1+=1
