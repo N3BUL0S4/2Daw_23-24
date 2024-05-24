@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.entity.PlayerEntity;
 
 @Repository
-public interface PlayerRepository extends JpaRepository<PlayerEntity, Long> {
+public interface PlayerRepository extends JpaRepository<PlayerEntity, Long>{
 	
 	//TODO - Os pongo las 3 posibles opciones de crear la consulta, solo es necesario una.
 	

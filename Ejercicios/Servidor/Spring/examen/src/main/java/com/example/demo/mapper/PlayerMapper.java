@@ -1,9 +1,7 @@
 package com.example.demo.mapper;
 
 import java.util.List;
-
 import org.mapstruct.Mapper;
-
 import com.example.demo.dto.PlayerDTO;
 import com.example.demo.entity.PlayerEntity;
 
